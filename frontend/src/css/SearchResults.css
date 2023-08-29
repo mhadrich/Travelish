@@ -1,0 +1,121 @@
+.user-view {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.user-view .div {
+  background-color: #ffffff;
+  height: 1928px;
+  position: relative;
+  width: 1440px;
+}
+
+.user-view .overlap {
+  background-image: url(./rectangle-10.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 468px;
+  left: 148px;
+  position: absolute;
+  top: 350px;
+  width: 1143px;
+}
+
+.user-view .text-wrapper {
+  color: #ffffff;
+  font-family: "Sansation-Bold", Helvetica;
+  font-size: 50px;
+  font-weight: 700;
+  left: 21px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 394px;
+  white-space: nowrap;
+}
+
+.user-view .group {
+  height: 35px;
+  left: 944px;
+  position: absolute;
+  top: 405px;
+  width: 175px;
+}
+
+.user-view .star {
+  height: 32px;
+  left: 1px;
+  position: absolute;
+  top: 0;
+  width: 33px;
+}
+
+.user-view .img {
+  height: 32px;
+  left: 36px;
+  position: absolute;
+  top: 0;
+  width: 33px;
+}
+
+.user-view .star-2 {
+  height: 32px;
+  left: 71px;
+  position: absolute;
+  top: 0;
+  width: 33px;
+}
+
+.user-view .star-3 {
+  height: 32px;
+  left: 106px;
+  position: absolute;
+  top: 0;
+  width: 33px;
+}
+
+.user-view .star-4 {
+  height: 32px;
+  left: 141px;
+  position: absolute;
+  top: 0;
+  width: 33px;
+}
+
+.user-view .overlap-group {
+  height: 1108px;
+  left: 132px;
+  position: absolute;
+  top: 820px;
+  width: 1175px;
+}
+
+.user-view .rectangle {
+  height: 500px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1175px;
+}
+
+.user-view .rectangle-2 {
+  height: 500px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 490px;
+  width: 1175px;
+}
+
+.user-view .rectangle-3 {
+  height: 128px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 980px;
+  width: 1175px;
+}
