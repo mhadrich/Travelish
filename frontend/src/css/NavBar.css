@@ -1,0 +1,123 @@
+.group {
+  height: 41px;
+  position: relative;
+  width: 1136px;
+}
+
+.group .logo {
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 168px;
+}
+
+.group .img {
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+}
+
+.group .text-wrapper {
+  color: #000000;
+  font-family: "Sansation-Regular", Helvetica;
+  font-size: 30px;
+  font-weight: 400;
+  left: 42px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3px;
+  white-space: nowrap;
+}
+
+.group .div {
+  height: 16px;
+  left: 400px;
+  position: absolute;
+  top: 12px;
+  width: 311px;
+}
+
+.group .text-wrapper-2 {
+  color: #000000;
+  font-family: "Sansation-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.group .text-wrapper-3 {
+  color: #000000;
+  font-family: "Sansation-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 109px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.group .text-wrapper-4 {
+  color: #000000;
+  font-family: "Sansation-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 183px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.group .text-wrapper-5 {
+  color: #000000;
+  font-family: "Sansation-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 244px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.group .sign-in {
+  height: 41px;
+  left: 1055px;
+  position: absolute;
+  top: 0;
+  width: 83px;
+}
+
+.group .overlap-group {
+  background-color: #4e7e99;
+  border-radius: 50px;
+  height: 41px;
+  position: relative;
+  width: 81px;
+}
+
+.group .text-wrapper-6 {
+  color: #ffffff;
+  font-family: "Sansation-Bold", Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  left: 19px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
