@@ -199,7 +199,7 @@
 }
 
 .business-owner-view .div-wrapper {
-  background-image: url(./rectangle-13.png);
+  /* background-image: url(./rectangle-13.png); */
   background-position: 50% 50%;
   background-size: cover;
   height: 272px;
