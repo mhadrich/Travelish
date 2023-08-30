@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { NavBar } from "./NavBar";
+import NavBar from "./NavBar";
 import { useNavigate, useLocation } from "react-router-dom";
-import { SearchResults } from "./SearchResults"; // Import the SearchResults component
+import SearchResults from "./SearchResults"; // Import the SearchResults component
 import "../css/Home.css";
 
 const Home = ({ data, trigger, setTrigger }) => {

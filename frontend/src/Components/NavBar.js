@@ -8,7 +8,7 @@ const NavBar = () => {
   return (
     <div className="group">
       <div className="logo">
-        <img className="img" alt="Group" src="https://spng.pngfind.com/pngs/s/669-6691661_new-travel-peeps-travel-agency-logo-png-transparent.png" />
+        <img className="img" alt="Group" src="https://generation-sessions.s3.amazonaws.com/d930e451834e355cc8fe2872204d2fe0/img/group-2@2x.png" />
         <div className="text-wrapper" onClick={()=>{ navigate("/" ) }} >Travelish</div>
       </div>
       <div className="div">

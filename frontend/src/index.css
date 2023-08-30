@@ -3,6 +3,11 @@
   src: url("https://anima-uploads.s3.amazonaws.com/5c5d7cd1900a14000b4cb75e/Sansation-Regular.ttf")
     format("truetype");
 }
+@font-face {
+  font-family: "Sansation-Bold";
+  src: url("https://anima-uploads.s3.amazonaws.com/5c5d7cd1900a14000b4cb75e/Sansation-Bold.ttf")
+    format("truetype");
+}
 body {
   margin: 0;
   font-family: 'Sansation', sans-serif;

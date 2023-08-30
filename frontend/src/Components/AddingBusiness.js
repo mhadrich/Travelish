@@ -3,7 +3,7 @@ import { useState } from "react";
 import "../css/AddingBusiness.css";
 // import axios from "axios";
 // import { Link } from "react-router-dom";
- const AddingBusiness = () => {
+const AddingBusiness = () => {
 // const handleSubmit=(e)=>{
 //   e.preventDefault()
 //   axios.post("http://localhost:3000/Add",{name:Name,adress:Adress,phones:phone,Hours:hours,Zone:Zone,description:description})

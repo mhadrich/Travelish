@@ -4,7 +4,7 @@ import "../css/AdminDetailView.css";
 import { useState } from 'react';
 // import { useNavigate } from 'react-router-dom';
 
-export const AdminDetailView = () => {
+const AdminDetailView = () => {
 
   const [contactForm, setContactForm] = useState(false)
   const [editContact, setEditContact] = useState(true);
@@ -157,3 +157,5 @@ export const AdminDetailView = () => {
   );
 
 };
+
+export default AdminDetailView;
