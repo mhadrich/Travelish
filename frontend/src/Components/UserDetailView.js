@@ -1,4 +1,5 @@
 import React from "react";
+
 import "../css/UserDetailView.css";
 
 export const UserDetailView = () => {
@@ -30,13 +31,13 @@ export const UserDetailView = () => {
         <div className="text-wrapper-8">Steak House</div>
         <div className="group-2">
           <div className="text-wrapper-9">70 reviews</div>
-          <img className="star" alt="Star" src="star-1.svg" />
-          <img className="star-2" alt="Star" src="star-2.svg" />
-          <img className="star-3" alt="Star" src="star-3.svg" />
-          <img className="star-4" alt="Star" src="star-4.svg" />
-          <img className="star-5" alt="Star" src="star-5.svg" />
+          <img className="star" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
+          <img className="star-2" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
+          <img className="star-3" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
+          <img className="star-4" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
+          <img className="star-5" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
         </div>
-        <img className="rectangle" alt="Rectangle" src="rectangle-16.png" />
+        <img className="rectangle" alt="Rectangle" src="https://soussemade.com/wp-content/uploads/2023/06/beach-bar-sousse-3.jpg" />
         <div className="overlap-2">
           <p className="there-aren-t-enough">
             There aren’t enough food, service, value or
@@ -45,14 +46,14 @@ export const UserDetailView = () => {
             <br />
             Be one of the first to write a review!
           </p>
-          <div className="text-wrapper-10">Rating &amp; Reviews</div>
+          <div className="text-wrapper-10">Rating &amp; Reviews </div>
           <div className="group-3">
             <div className="text-wrapper-9">70 reviews</div>
-            <img className="star" alt="Star" src="image.svg" />
-            <img className="star-2" alt="Star" src="star-2-2.svg" />
-            <img className="star-3" alt="Star" src="star-3-2.svg" />
-            <img className="star-4" alt="Star" src="star-4-2.svg" />
-            <img className="star-5" alt="Star" src="star-5-2.svg" />
+            <img className="star" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
+            <img className="star-2" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
+            <img className="star-3" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
+            <img className="star-4" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
+            <img className="star-5" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
           </div>
           <img className="vector" alt="Vector" src="vector-8.svg" />
           <div className="div-wrapper">
@@ -82,17 +83,17 @@ export const UserDetailView = () => {
           <img className="mask-group" alt="Mask group" src="mask-group.png" />
           <div className="group-4">
             <div className="text-wrapper-12">16:00 - 03:00</div>
-            <img className="image" alt="Image" src="image-5.png" />
+            <img className="image" alt="Image" src="https://cdn-icons-png.flaticon.com/512/2088/2088617.png" />
           </div>
           <div className="group-wrapper">
             <div className="group-5">
               <div className="text-wrapper-13">55555555</div>
-              <img className="mask-group-2" alt="Mask group" src="image.png" />
+              <img className="mask-group-2" alt="Mask group" src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/phone-512.png" />
             </div>
           </div>
           <div className="group-6">
             <p className="p">14 Rue de Liberté, Tunis</p>
-            <img className="image" alt="Image" src="image-7.png" />
+            <img className="image" alt="Image" src="https://w7.pngwing.com/pngs/561/324/png-transparent-location-address-position-linear-icon-location-address-position-thumbnail.png" />
           </div>
         </div>
         <div className="text-wrapper-14">Similar to this place</div>
