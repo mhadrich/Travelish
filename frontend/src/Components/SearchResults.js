@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate, useLocation } from "react-router-dom";
 import "../css/SearchResults.css";
 
 export const SearchResults = ({ searchResults }) => {
+  const location = useLocation();
   return (
     <div className="user-view">
       {searchResults.map((result, index) => (
@@ -22,4 +24,6 @@ export const SearchResults = ({ searchResults }) => {
     </div>
   );
 };
+
+export default SearchResults ;
 

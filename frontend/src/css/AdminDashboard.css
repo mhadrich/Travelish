@@ -174,7 +174,7 @@
   width: 1141px;
 }
 
-.business-owner-view .overlap {
+/* .business-owner-view .overlap {
   background-image: url(./rectangle-12.png);
   background-position: 50% 50%;
   background-size: cover;
@@ -183,7 +183,7 @@
   position: absolute;
   top: 54px;
   width: 272px;
-}
+} */
 
 .business-owner-view .text-wrapper-9 {
   color: #ffffff;
@@ -199,7 +199,6 @@
 }
 
 .business-owner-view .div-wrapper {
-  /* background-image: url(./rectangle-13.png); */
   background-position: 50% 50%;
   background-size: cover;
   height: 272px;
@@ -209,7 +208,7 @@
   width: 272px;
 }
 
-.business-owner-view .overlap-2 {
+/* .business-owner-view .overlap-2 {
   background-image: url(./rectangle-14.png);
   background-position: 50% 50%;
   background-size: cover;
@@ -218,7 +217,7 @@
   position: absolute;
   top: 54px;
   width: 272px;
-}
+} */
 
 .business-owner-view .overlap-3 {
   height: 336px;

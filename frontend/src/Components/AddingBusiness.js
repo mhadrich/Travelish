@@ -61,3 +61,6 @@ export const AddingBusiness = () => {
     </div>
   );
 };
+
+
+export default AddingBusiness;
