@@ -442,3 +442,23 @@
   top: 1px;
   white-space: nowrap;
 }
+textarea {
+  background-color: transparent;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+textarea {
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1.5px solid black;
+  box-shadow: 1px 1px 1px grey;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
