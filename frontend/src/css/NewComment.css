@@ -1,0 +1,181 @@
+.add-comment {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.add-comment .div {
+  background-color: #ffffff;
+  height: 1024px;
+  width: 1440px;
+}
+
+.add-comment .group {
+  height: 459px;
+  left: 249px;
+  position: relative;
+  top: 283px;
+  width: 948px;
+}
+
+.add-comment .tell-us-how-was-your {
+  color: #000000;
+  font-family: "Sansation-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 0;
+}
+
+.add-comment .selected-business {
+  height: 325px;
+  left: 49px;
+  position: absolute;
+  top: 134px;
+  width: 249px;
+}
+
+.add-comment .overlap-group {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #00000033;
+  border-radius: 30px 30px 0px 0px;
+  height: 325px;
+  position: relative;
+  width: 245px;
+}
+
+.add-comment .rectangle {
+  height: 263px;
+  left: -1px;
+  position: absolute;
+  top: -1px;
+  width: 245px;
+}
+
+.add-comment .text-wrapper {
+  color: #000000;
+  font-family: "Sansation-Bold", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  left: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 270px;
+  white-space: nowrap;
+}
+
+.add-comment .p {
+  color: #000000;
+  font-family: "Sansation-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 14px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 295px;
+  white-space: nowrap;
+}
+
+.add-comment .separator {
+  height: 459px;
+  left: 388px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.add-comment .text-wrapper-2 {
+  color: #000000;
+  font-family: "Sansation-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 482px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.add-comment .text-wrapper-3 {
+  color: #000000;
+  font-family: "Sansation-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 482px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 109px;
+  white-space: nowrap;
+}
+
+.add-comment .group-2 {
+  height: 36px;
+  left: 482px;
+  position: absolute;
+  top: 45px;
+  width: 180px;
+}
+
+.add-comment .star {
+  height: 33px;
+  left: 1px;
+  position: absolute;
+  top: 0;
+  width: 34px;
+}
+
+.add-comment .img {
+  height: 33px;
+  left: 37px;
+  position: absolute;
+  top: 0;
+  width: 34px;
+}
+
+.add-comment .star-2 {
+  height: 33px;
+  left: 73px;
+  position: absolute;
+  top: 0;
+  width: 34px;
+}
+
+.add-comment .star-3 {
+  height: 33px;
+  left: 109px;
+  position: absolute;
+  top: 0;
+  width: 34px;
+}
+
+.add-comment .star-4 {
+  height: 33px;
+  left: 145px;
+  position: absolute;
+  top: 0;
+  width: 34px;
+}
+
+.add-comment .rectangle-2 {
+  background-color: #f7f7f7;
+  border: 1px solid;
+  border-color: #00000033;
+  border-radius: 10px;
+  height: 298px;
+  left: 482px;
+  position: absolute;
+  top: 161px;
+  width: 460px;
+}

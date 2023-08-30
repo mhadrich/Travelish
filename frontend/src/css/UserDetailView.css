@@ -1,4 +1,4 @@
-.business-owner {
+.user-business-view {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -6,14 +6,14 @@
   width: 100%;
 }
 
-.business-owner .div {
+.user-business-view .div {
   background-color: #ffffff;
-  height: 1024px;
+  height: 1338px;
   position: relative;
   width: 1440px;
 }
 
-.business-owner .group {
+.user-business-view .group {
   height: 41px;
   left: 152px;
   position: absolute;
@@ -21,7 +21,7 @@
   width: 1137px;
 }
 
-.business-owner .logo {
+.user-business-view .logo {
   height: 40px;
   left: 0;
   position: absolute;
@@ -29,7 +29,7 @@
   width: 168px;
 }
 
-.business-owner .img {
+.user-business-view .img {
   height: 40px;
   left: 0;
   position: absolute;
@@ -37,7 +37,7 @@
   width: 40px;
 }
 
-.business-owner .text-wrapper {
+.user-business-view .text-wrapper {
   color: #000000;
   font-family: "Sansation-Regular", Helvetica;
   font-size: 30px;
@@ -50,7 +50,7 @@
   white-space: nowrap;
 }
 
-.business-owner .navbar {
+.user-business-view .navbar {
   height: 16px;
   left: 400px;
   position: absolute;
@@ -58,7 +58,7 @@
   width: 311px;
 }
 
-.business-owner .text-wrapper-2 {
+.user-business-view .text-wrapper-2 {
   color: #000000;
   font-family: "Sansation-Regular", Helvetica;
   font-size: 14px;
@@ -71,7 +71,7 @@
   white-space: nowrap;
 }
 
-.business-owner .text-wrapper-3 {
+.user-business-view .text-wrapper-3 {
   color: #000000;
   font-family: "Sansation-Regular", Helvetica;
   font-size: 14px;
@@ -84,7 +84,7 @@
   white-space: nowrap;
 }
 
-.business-owner .text-wrapper-4 {
+.user-business-view .text-wrapper-4 {
   color: #000000;
   font-family: "Sansation-Regular", Helvetica;
   font-size: 14px;
@@ -97,7 +97,7 @@
   white-space: nowrap;
 }
 
-.business-owner .text-wrapper-5 {
+.user-business-view .text-wrapper-5 {
   color: #000000;
   font-family: "Sansation-Regular", Helvetica;
   font-size: 14px;
@@ -110,28 +110,25 @@
   white-space: nowrap;
 }
 
-.business-owner .sign-in {
+.user-business-view .sign-in {
   height: 41px;
-  left: 1030px;
+  left: 1052px;
   position: absolute;
   top: 0;
-  width: 109px;
+  width: 87px;
 }
 
-.business-owner .overlap-group {
-  background-color: #4e7e99;
-  border-radius: 50px;
+.user-business-view .overlap {
   height: 41px;
   position: relative;
-  width: 107px;
 }
 
-.business-owner .text-wrapper-6 {
+.user-business-view .text-wrapper-6 {
   color: #ffffff;
   font-family: "Sansation-Bold", Helvetica;
   font-size: 14px;
   font-weight: 700;
-  left: 22px;
+  left: 0;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -139,7 +136,36 @@
   white-space: nowrap;
 }
 
-.business-owner .text-wrapper-7 {
+.user-business-view .overlap-group-wrapper {
+  height: 41px;
+  left: 4px;
+  position: absolute;
+  top: 0;
+  width: 83px;
+}
+
+.user-business-view .overlap-group {
+  background-color: #4e7e99;
+  border-radius: 50px;
+  height: 41px;
+  position: relative;
+  width: 81px;
+}
+
+.user-business-view .text-wrapper-7 {
+  color: #ffffff;
+  font-family: "Sansation-Bold", Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  left: 19px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}
+
+.user-business-view .text-wrapper-8 {
   color: #000000;
   font-family: "Sansation-Bold", Helvetica;
   font-size: 28px;
@@ -152,7 +178,7 @@
   white-space: nowrap;
 }
 
-.business-owner .group-2 {
+.user-business-view .group-2 {
   height: 18px;
   left: 152px;
   position: absolute;
@@ -160,7 +186,7 @@
   width: 162px;
 }
 
-.business-owner .text-wrapper-8 {
+.user-business-view .text-wrapper-9 {
   color: #000000;
   font-family: "Sansation-Regular", Helvetica;
   font-size: 16px;
@@ -173,7 +199,7 @@
   white-space: nowrap;
 }
 
-.business-owner .star {
+.user-business-view .star {
   height: 14px;
   left: 0;
   position: absolute;
@@ -181,7 +207,7 @@
   width: 14px;
 }
 
-.business-owner .star-2 {
+.user-business-view .star-2 {
   height: 14px;
   left: 15px;
   position: absolute;
@@ -189,7 +215,7 @@
   width: 14px;
 }
 
-.business-owner .star-3 {
+.user-business-view .star-3 {
   height: 14px;
   left: 30px;
   position: absolute;
@@ -197,7 +223,7 @@
   width: 14px;
 }
 
-.business-owner .star-4 {
+.user-business-view .star-4 {
   height: 14px;
   left: 45px;
   position: absolute;
@@ -205,7 +231,7 @@
   width: 14px;
 }
 
-.business-owner .star-5 {
+.user-business-view .star-5 {
   height: 14px;
   left: 60px;
   position: absolute;
@@ -213,7 +239,7 @@
   width: 14px;
 }
 
-.business-owner .rectangle {
+.user-business-view .rectangle {
   height: 176px;
   left: 152px;
   object-fit: cover;
@@ -222,7 +248,7 @@
   width: 1137px;
 }
 
-.business-owner .overlap {
+.user-business-view .overlap-2 {
   background-color: #f0f0f0;
   height: 376px;
   left: 152px;
@@ -231,7 +257,7 @@
   width: 371px;
 }
 
-.business-owner .there-aren-t-enough {
+.user-business-view .there-aren-t-enough {
   color: #000000;
   font-family: "Sansation-Regular", Helvetica;
   font-size: 16px;
@@ -243,7 +269,7 @@
   top: 103px;
 }
 
-.business-owner .text-wrapper-9 {
+.user-business-view .text-wrapper-10 {
   color: #000000;
   font-family: "Sansation-Bold", Helvetica;
   font-size: 20px;
@@ -256,7 +282,7 @@
   white-space: nowrap;
 }
 
-.business-owner .group-3 {
+.user-business-view .group-3 {
   height: 18px;
   left: 23px;
   position: absolute;
@@ -264,7 +290,7 @@
   width: 162px;
 }
 
-.business-owner .vector {
+.user-business-view .vector {
   height: 1px;
   left: 26px;
   object-fit: cover;
@@ -273,7 +299,7 @@
   width: 320px;
 }
 
-.business-owner .div-wrapper {
+.user-business-view .div-wrapper {
   background-color: #000000;
   border-radius: 5px;
   height: 48px;
@@ -283,12 +309,12 @@
   width: 319px;
 }
 
-.business-owner .text-wrapper-10 {
+.user-business-view .text-wrapper-11 {
   color: #ffffff;
   font-family: "Sansation-Bold", Helvetica;
   font-size: 16px;
   font-weight: 700;
-  left: 97px;
+  left: 106px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
@@ -296,7 +322,7 @@
   white-space: nowrap;
 }
 
-.business-owner .overlap-2 {
+.user-business-view .overlap-3 {
   background-color: #f0f0f0;
   height: 376px;
   left: 535px;
@@ -305,7 +331,7 @@
   width: 371px;
 }
 
-.business-owner .lorem-ipsum-dolor {
+.user-business-view .lorem-ipsum-dolor {
   color: #000000;
   font-family: "Sansation-Regular", Helvetica;
   font-size: 16px;
@@ -314,39 +340,10 @@
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 46px;
+  top: 59px;
 }
 
-.business-owner .overlap-wrapper {
-  height: 48px;
-  left: 26px;
-  position: absolute;
-  top: 306px;
-  width: 321px;
-}
-
-.business-owner .overlap-3 {
-  background-color: #000000;
-  border-radius: 5px;
-  height: 48px;
-  position: relative;
-  width: 319px;
-}
-
-.business-owner .text-wrapper-11 {
-  color: #ffffff;
-  font-family: "Sansation-Bold", Helvetica;
-  font-size: 16px;
-  font-weight: 700;
-  left: 145px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 15px;
-  white-space: nowrap;
-}
-
-.business-owner .overlap-4 {
+.user-business-view .overlap-4 {
   background-color: #f0f0f0;
   height: 376px;
   left: 918px;
@@ -355,23 +352,23 @@
   width: 371px;
 }
 
-.business-owner .mask-group {
+.user-business-view .mask-group {
   height: 129px;
   left: 24px;
   position: absolute;
-  top: 50px;
+  top: 60px;
   width: 324px;
 }
 
-.business-owner .group-4 {
+.user-business-view .group-4 {
   height: 18px;
   left: 26px;
   position: absolute;
-  top: 263px;
+  top: 333px;
   width: 126px;
 }
 
-.business-owner .text-wrapper-12 {
+.user-business-view .text-wrapper-12 {
   color: #000000;
   font-family: "Sansation-Regular", Helvetica;
   font-size: 16px;
@@ -384,7 +381,7 @@
   white-space: nowrap;
 }
 
-.business-owner .image {
+.user-business-view .image {
   height: 18px;
   left: 0;
   object-fit: cover;
@@ -393,15 +390,21 @@
   width: 18px;
 }
 
-.business-owner .group-5 {
+.user-business-view .group-wrapper {
   height: 32px;
   left: 22px;
   position: absolute;
-  top: 222px;
+  top: 271px;
+  width: 101px;
+}
+
+.user-business-view .group-5 {
+  height: 32px;
+  position: relative;
   width: 103px;
 }
 
-.business-owner .text-wrapper-13 {
+.user-business-view .text-wrapper-13 {
   color: #000000;
   font-family: "Sansation-Regular", Helvetica;
   font-size: 16px;
@@ -414,7 +417,7 @@
   white-space: nowrap;
 }
 
-.business-owner .mask-group-2 {
+.user-business-view .mask-group-2 {
   height: 32px;
   left: 0;
   position: absolute;
@@ -422,15 +425,15 @@
   width: 25px;
 }
 
-.business-owner .group-6 {
+.user-business-view .group-6 {
   height: 19px;
   left: 26px;
   position: absolute;
-  top: 188px;
+  top: 223px;
   width: 196px;
 }
 
-.business-owner .p {
+.user-business-view .p {
   color: #000000;
   font-family: "Sansation-Regular", Helvetica;
   font-size: 16px;
@@ -442,23 +445,81 @@
   top: 1px;
   white-space: nowrap;
 }
-textarea {
-  background-color: transparent;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
+
+.user-business-view .text-wrapper-14 {
+  color: #000000;
+  font-family: "Sansation-Bold", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  left: 152px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 892px;
+  white-space: nowrap;
 }
 
-textarea {
-  padding: 10px;
-  max-width: 100%;
-  line-height: 1.5;
-  border-radius: 5px;
-  border: 1.5px solid black;
-  box-shadow: 1px 1px 1px grey;
+.user-business-view .group-7 {
+  height: 272px;
+  left: 153px;
+  position: absolute;
+  top: 940px;
+  width: 1141px;
 }
 
-label {
-  display: block;
-  margin-bottom: 10px;
+.user-business-view .overlap-5 {
+  background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/0e/d0/b2/e1/vue-terasse.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 272px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 272px;
 }
 
+.user-business-view .text-wrapper-15 {
+  color: #ffffff;
+  font-family: "Sansation-Bold", Helvetica;
+  font-size: 28px;
+  font-weight: 700;
+  left: 8px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 237px;
+  white-space: nowrap;
+}
+
+.user-business-view .overlap-6 {
+  background-image: url("https://www.resabo.com/cr.fwk/images/hotels/Section-3602-20130503-043725.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 272px;
+  left: 287px;
+  position: absolute;
+  top: 0;
+  width: 272px;
+}
+
+.user-business-view .overlap-7 {
+  background-image: url("https://media-cdn.tripadvisor.com/media/photo-s/0e/d0/b2/e1/vue-terasse.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 272px;
+  left: 574px;
+  position: absolute;
+  top: 0;
+  width: 272px;
+}
+
+.user-business-view .overlap-8 {
+  background-image: url("https://ilovevagabond.files.wordpress.com/2020/07/800px-hammamet_medina.jpg?w=800");
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 272px;
+  left: 861px;
+  position: absolute;
+  top: 0;
+  width: 272px;
+}
