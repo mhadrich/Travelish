@@ -2,6 +2,8 @@
   height: 41px;
   position: relative;
   width: 1136px;
+  position: relative;
+  left: 20px; 
 }
 
 .group .logo {
@@ -78,6 +80,7 @@
   position: absolute;
   top: 0;
   white-space: nowrap;
+  
 }
 
 .group .text-wrapper-5 {
