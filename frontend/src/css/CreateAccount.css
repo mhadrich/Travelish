@@ -39,9 +39,10 @@
 }
 
 .create-account .we-re-here-to-give-wrapper {
-  background-image: url(./rectangle-1.png);
+  background-image: url(https://drscdn.500px.org/photo/1023783987/q%3D80_m%3D2000/v2?sig=cf148b1b4ca618f371c71472f0a2e2d5a9a8008e30be827b9eee574655709da1);
   background-position: 50% 50%;
   background-size: cover;
+  border-radius: 30px;
   height: 728px;
   left: 610px;
   position: absolute;
@@ -54,7 +55,7 @@
   font-family: "Sansation-Regular", Helvetica;
   font-size: 34px;
   font-weight: 400;
-  left: 40px;
+  left: 50px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
