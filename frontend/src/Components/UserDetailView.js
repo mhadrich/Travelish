@@ -2,7 +2,7 @@ import React from "react";
 
 import "../css/UserDetailView.css";
 
-export const UserDetailView = () => {
+const UserDetailView = () => {
   return (
     <div className="user-business-view">
       <div className="div">
@@ -115,3 +115,5 @@ export const UserDetailView = () => {
     </div>
   );
 };
+
+export default UserDetailView

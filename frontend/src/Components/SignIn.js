@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/SignIn.css";
 
-export const SignIn = () => {
+const SignIn = () => {
   return (
     <div className="sign-in">
       <div className="div">
@@ -48,3 +48,6 @@ export const SignIn = () => {
     </div>
   );
 };
+
+
+export default SignIn

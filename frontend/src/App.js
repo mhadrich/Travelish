@@ -8,6 +8,11 @@ import AdminDashboard from './Components/AdminDashboard';
 import AddingBusiness from './Components/AddingBusiness'
 import AdminDetailView from './Components/AdminDetailView';
 import SearchResults from './Components/SearchResults';
+import NewComment from './Components/NewComment'
+import SignIn from './Components/SignIn'
+import CreateAccount from './Components/CreateAccount'
+import UserDetailView from './Components/UserDetailView'
+
 
 function App() {
   const [data, setData] = useState([]);
@@ -29,6 +34,10 @@ function App() {
           <Route path="/AdminDetailView" element={<AdminDetailView/>} />
           <Route path="/AdminDashboard" element={<AdminDashboard />} />
           <Route path="/AddingBusiness" element={<AddingBusiness />} />
+          <Route path="/NewComment" element={<NewComment/>} />
+          <Route path="/SignIn" element={<SignIn/>} />
+          <Route path="/CreateAccount" element={<CreateAccount/>} />
+          <Route path="/UserDetailView" element={<UserDetailView/>} />
         </Routes>
       </Router>
     </div>

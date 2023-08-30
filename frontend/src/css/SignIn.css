@@ -178,7 +178,7 @@
 }
 
 .sign-in .overlap {
-  background-image: url(./rectangle-1.png);
+  /* background-image: url(./rectangle-1.png); */
   background-position: 50% 50%;
   background-size: cover;
   height: 728px;
