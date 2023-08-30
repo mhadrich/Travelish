@@ -126,4 +126,3 @@ export const AdminDetailView = () => {
 };
 
 
-export default AdminDetailView ;
