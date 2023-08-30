@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/CreateAccount.css";
 
-export const CreateAccount = () => {
+const CreateAccount = () => {
   return (
     <div className="create-account">
       <div className="div">
@@ -56,3 +56,5 @@ export const CreateAccount = () => {
     </div>
   );
 };
+
+export default CreateAccount

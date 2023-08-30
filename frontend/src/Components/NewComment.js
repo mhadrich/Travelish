@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/NewComment.css";
 
-export const NewComment = () => {
+const NewComment = () => {
   return (
     <div className="add-comment">
       <div className="div">
@@ -34,3 +34,6 @@ export const NewComment = () => {
     </div>
   );
 };
+
+
+export default NewComment
