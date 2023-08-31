@@ -1,0 +1,422 @@
+[
+    {
+        "name": "Jobi Sousse",
+        "category": "bar",
+        "description": "Service de livraison, Plats à emporter, Sert de l'alcool",
+        "adress": "Boulevard 14 Janvier Résidence le Monaco, Sousse 4000 Tunisie",
+        "zone": "sousse",
+        "phone": "+216 58 401 401",
+        "horaire": "13:00 - 01:00",
+        "comments": [
+            {
+                "rating": "1",
+                "body": "Nul je ne recommande pas. Ce restaurant limite l'accès pourtant les tables à l'intérieur son vides. A éviter !"
+            },
+            {
+                "rating": "5",
+                "body": "très bien situé et frequenté, une ambiance festive tous les jours de la semaine. recommandé pour boire un pot entre potes et manger de bon tapas."
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "Golf Brau",
+        "category": "bar",
+        "description": "Réservations, Terrasse, Places assises, Télévision, Sert de l'alcool, Bar complet, Service de table, Concerts",
+        "adress": "Opposite Aqualand, Port El Kantaoui, Hammam Sousse 4089 Tunisie",
+        "zone": "sousse",
+        "phone": "+216 97 223 862",
+        "horaire": "16:00 - 03:00",
+        "comments": [
+            {
+                "rating": "5",
+                "body": "Mes remerciements s'adresse spécialement à l'animatrice de mini club koukou vraiment vous êtes très gentille avec mes enfants. Franchement merci bien et à la prochaine."
+            },
+            {
+                "rating": "5",
+                "body": "Mes salutations spécialement pour l'animatrice nana zumba vous étiez formidables, toujours souriante, hyper gentille et Surtout hyper active"
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "Destino Beach",
+        "category": "bar",
+        "description": "Réservations, Places assises",
+        "adress": "Port El Kantaoui, Sousse 4059 Tunisie",
+        "zone": "sousse",
+        "phone": "+216 29 608 806",
+        "horaire": "12:00 - 23:00",
+        "comments": [
+            {
+                "rating": "1",
+                "body": "Meme Un étoile ne mérite pas Manque du respect service nulle!! Cherchez la tranquillité et dépensez ailleurs"
+            },
+            {
+                "rating": "2",
+                "body": "Prix exorbitant !!! Trop cher !!! Un plat avec 4 crevettes..un calamars et 4petites sèches et un plat de pâtes au poisson a 290dt !?!?!?!"
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "The Saloon",
+        "category": "bar",
+        "description": "Plats à emporter, Places assises, Stationnement dans la rue, Télévision, Chaises hautes disponibles, Accessible en fauteuil roulant, Sert de l'alcool, Bar complet, Visa acceptée, Wi-Fi gratuit, Accepte les cartes bancaires, Service de table, Concerts",
+        "adress": "Boulevard 14 Janvier Face hotel Movenpick, Sousse 5070 Tunisie",
+        "zone": "sousse",
+        "phone": "+216 73 229 845",
+        "horaire": "11:30 - 01:00",
+        "comments": [
+            {
+                "rating": "1",
+                "body": "Sécurité catastrophique concernant msr radhouen Il veut gagner de l'argent à dos des clients Pour entrer il faut payer minimum 100dt pour lui et si tu refuses tu seras un problème avec la sécurité plein public Endroit à ne pas visiter"
+            },
+            {
+                "rating": "1",
+                "body": "Une vraie arnaque, nourriture médiocre et boissons trop chers, des serveurs impolis et négligent, tu payes 20 dinars pour un service d'anniversaire sans même avoir droit au petites assiettes et cuillères, honte a vous !!!"
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "Peckers Pizza",
+        "category": "restaurant",
+        "description": "Plats à emporter, Service de livraison, Places assises",
+        "adress": "Rue des Palmiers, Khezema, Sousse 4000 Tunisie",
+        "zone": "sousse",
+        "phone": "+216 24 516 705",
+        "horaire": "11:30 - 00:00",
+        "comments": [
+            {
+                "rating": "4",
+                "body": "Je le recommande fortement pâtes très bonne service rapide ambiance calme pas de parking tu peux garé la voiture sur la route"
+            },
+            {
+                "rating": "4",
+                "body": "on mange bien dans ce café restaurant, la pizza est bonne, les plats c'est correctes. j'ai pris un brunch peckers : très bien. je recommande cet endroit"
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "London Food",
+        "category": "restaurant",
+        "description": "Plats à emporter, Service de livraison, Places assises, Accessible en fauteuil roulant",
+        "adress": "8 Avenue Khezama Est, Sousse 4000 Tunisie",
+        "zone": "sousse",
+        "phone": "+216 55 100 050",
+        "horaire": "11:30 - 00:00",
+        "comments": [
+            {
+                "rating": "3",
+                "body": "Leur salade César est top sinon rien de spécial. L'établissement propose une large sélection de sandwich mais bon faudra aimer .."
+            },
+            {
+                "rating": "5",
+                "body": "Un endroit très agréable des bons plats des bons sandwichs( cornet,roulet,makloub, mahboules,paninis,hamburgers)"
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "Mio Mondo",
+        "category": "restaurant",
+        "description": "Plats à emporter, Réservations, Terrasse, Places assises, Chaises hautes disponibles, Wi-Fi gratuit, Service de table",
+        "adress": "14 Route Touristique, Sousse 4000 Tunisie",
+        "zone": "sousse",
+        "phone": "+216 73 273 243",
+        "horaire": "07:00 - 01:00",
+        "comments": [
+            {
+                "rating": "5",
+                "body": "Très bonne accueil et brunch délicieux Rapport qualité prix impeccable Serveur Wali attentionné Je recommande +++"
+            },
+            {
+                "rating": "5",
+                "body": "Super accueil, Brunch excellent rapport qualité prix plus que raisonnable. Merci au Directeur Mr Ali merci également à notre serveur Wali qui à été au petit soins. Je recommande les yeux fermés"
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "Escargot",
+        "category": "restaurant",
+        "description": "Réservations, Terrasse, Places assises, Accessible en fauteuil roulant, Sert de l'alcool, Bar complet, Service de table, Parking privé gratuit, Visa acceptée",
+        "adress": "Avenue Taib Mehiri, Sousse 4000 Tunisie",
+        "zone": "sousse",
+        "phone": "+216 73 224 779",
+        "horaire": "07:00 - 01:00",
+        "comments": [
+            {
+                "rating": "5",
+                "body": "Cadre exceptionnel, repas savoureux , service impeccable, propriétaire très accueillant. Merci pour ce bon moment"
+            },
+            {
+                "rating": "5",
+                "body": "Une institution à Sousse. Très bonne adresse à Sousse. Belle carte et plats savoureux - en particulier le poisson. Patron sympa et accueillant. Cadre agréable"
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "Marhaba Beach",
+        "category": "hotel",
+        "description": "Situé entre Sousse et Port El Kantaoui, Marhaba Beach 4* est un endroit charmant qui offre l’expérience des vacances idéales au bord de l’une des plus belles plages de la Méditerranée.",
+        "adress": "Boulevard 14 Janvier, Sousse 4039 Tunisie",
+        "zone": "sousse",
+        "phone": "+216 73 240 112",
+        "horaire": "24h/24",
+        "comments": [
+            {
+                "rating": "4",
+                "body": "Très contente de cet hôtel bien situé chambre très propre vue sur la plage serveurs très gentils et à l écoute piscine un peu petite mais correcte j'ai passé de très bonnes vacances tout le personnel est très gentil"
+            },
+            {
+                "rating": "5",
+                "body": "Je recommande cet hôtel, j'y reviendrai l'année prochaine c'est sûr. personnel de 10e année, du matin jusqu'à 10 heures, l'agenda est plein d'activités. très bonne cuisine diversifiée. La plage est toute proche, le sable est très fin. il y a aussi un bar sur la plage où sont servis un snack et un déjeuner."
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "JAZ Tour Khalef Thalasso & Spa",
+        "category": "hotel",
+        "description": "Vous cherchez un endroit où séjourner à Sousse ? Voilà ce qu’il vous faut : le JAZ Tour Khalef Thalasso & Spa, un hôtel familial qui vous apporte le meilleur de Sousse à votre portée.",
+        "adress": "Boulevard du 14 Janvier, Sousse 4051 Tunisie",
+        "zone": "sousse",
+        "phone": "+216 73 241 844",
+        "horaire": "24h/24",
+        "comments": [
+            {
+                "rating": "5",
+                "body": "Excellent séjour accueil très sympathique et chaleureux chambre spacieuse et confortable nourriture variée et délicieuse direction à l’écoute très bon service emplacement idéal et parfait 😇 pour moi meilleur hôtel à Tunis 😇😍🥰 super 👍🏻✅✅✅✅✅✅"
+            },
+            {
+                "rating": "5",
+                "body": "Des vacances de rêve, un hôtel qui mérite les 5 étoiles. Tout le personnel est formidable. Le personnel du bar de la piscine toujours au top. Et un énorme merci à toute l’équipe d’animation sans qui mon séjour n’aurait pas été le même, vous êtes tous au top ne changez pas !"
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "Movenpick Resort & Marine Spa Sousse",
+        "category": "hotel",
+        "description": "Découvrez pourquoi le Movenpick Resort & Marine Spa Sousse est le complexe touristique préféré des voyageurs visitant Sousse. Offrant un grand confort et un excellent rapport qualité-prix, il propose un cadre un de luxe et un large éventail de services conçus pour les voyageurs comme vous.",
+        "adress": "Boulevard du 14 Janvier, Sousse 4051 Tunisie",
+        "zone": "sousse",
+        "phone": "+216 73 241 844",
+        "horaire": "24h/24",
+        "comments": [
+            {
+                "rating": "5",
+                "body": "Très bel hôtel j’ai passer des bons moments. Magnifique piscine et personnels agréables. L’hôtel est très bien situé je recommande et je reviendrai. La réception est très sympas . C’est très sécurisé. La restauration est bonne et très variées."
+            },
+            {
+                "rating": "5",
+                "body": "Très bel hôtel. Le service est à la hauteur, un accueil chaleureux et l'on peut compter sur le professionnalisme et l'amabilité du personnel. Un grand merci aux serveurs plage et piscine qui sont au top, tout particulièrement à Othmen qui sait satisfaire les clients 🌞☺️"
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "El Ksar Resort & Thalasso",
+        "category": "hotel",
+        "description": "Vous êtes à la recherche d'un cadre familial et d'une gamme de services conçus pour sublimer votre séjour à Sousse ? Alors l'El Ksar Resort & Thalasso vous apportera entière satisfaction.",
+        "adress": "Boulevard 14 Janvie, Sousse 4037 Tunisie",
+        "zone": "sousse",
+        "phone": "+216 73 240 460",
+        "horaire": "24h/24",
+        "comments": [
+            {
+                "rating": "5",
+                "body": "L’hôtel est vraiment magnifique restaurant bar la piscine et la plage surtout l’ambiance avec les animateurs et les soirées bien animés un spécial dédicace pour antonio et mano jiji"
+            },
+            {
+                "rating": "5",
+                "body": "Super séjour dans cet hôtel fin avril avec un temps superbe hôtel très jolie. Équipe et service au top 👌"
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "Excursion demi journée départ de sousse au amphithéâtre d'El Jem",
+        "category": "activity",
+        "description": "Ce circuit vers el-jem vous permettrais de découvrir son immense colisée. Le coliséee d’El Jem est tout simplement le 3ème plus grand amphithéâtre du monde romain après ceux de Rome et Capoue, et peut-être le mieux conservé.",
+        "adress": "",
+        "zone": "sousse",
+        "phone": "",
+        "horaire": "",
+        "comments": [
+            {
+                "rating": "5",
+                "body": "El jem nous plonge dans l histoire des romains. Magnifique ville ! Amphithéâtre, villa romaine , musée de la mosaïque ."
+            },
+            {
+                "rating": "5",
+                "body": "La présence romaine est très significative à travers ce colisée qui, par sa grandeur, est le deuxième après celui de Rome. Site emblématique à visiter."
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "3 jours de safari en jeep au départ de Sousse",
+        "category": "activity",
+        "description": "Vivez une expérience inoubliable dans le désert, tout en profitant des paysages saisissants, d’activités amusantes, et d’une histoire fascinante, au cours de cette excursion de 3 jours et 2 nuits au départ de Sousse.",
+        "adress": "",
+        "zone": "sousse",
+        "phone": "",
+        "horaire": "",
+        "comments": [
+            {
+                "rating": "5",
+                "body": "Tout était exceptionnel sur les 2 jours et je recommande vivement ce voyage. Colisée, balade à dos de chameau, quad, cheval et calèche, visite du plateau de tournage de Star Wars, visite d'Oasis, 4 x 4 jeeps safari. Admirez le lever et le coucher du soleil dans le désert parmi les nombreux arrêts du voyage."
+            },
+            {
+                "rating": "5",
+                "body": "Belle excursion et expérience. Nous avons payé 100 par personne comprend 2 x déjeuner, 1 x dîner et 1 x lit et petit déjeuner. Comprend également une balade en 4 x 4."
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "Excursion d'une journée Kairouan départ de Sousse.",
+        "category": "activity",
+        "description": "Départ depuis votre lieu d’hébergement à Sousse vers Kairouan classée la 4ème ville la plus sacrée du monde islamique.",
+        "adress": "",
+        "zone": "sousse",
+        "phone": "",
+        "horaire": "",
+        "comments": [
+            {
+                "rating": "5",
+                "body": "Nous avons réalisé deux excursions Sousse / Monastir et le lendemain Kairouan. Nadhmi était notre guide, nous avons passé avec lui parmi nos meilleurs moments en Tunisie."
+            },
+            {
+                "rating": "5",
+                "body": "Une journée pleine de découvertes à Kairouan, ville magnifique , pleine d histoire , artisanat, les tapis de Kairouan bien sûr"
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "Excursion privée d'une demi journée à l'authentique Monastir",
+        "category": "activity",
+        "description": "Découvrez le charme historique de Monastir lors de notre excursion privée à travers ses sites emblématiques.Explorez la Médina, plongez dans l'atmosphère authentique de ses ruelles animées et visitez le Ribat, une forteresse médiévale impressionnante.",
+        "adress": "",
+        "zone": "sousse",
+        "phone": "",
+        "horaire": "",
+        "comments": [
+            {
+                "rating": "5",
+                "body": "The tour was very well conducted with a friendly courteous guide. He was very knowledgeable and clear and his grasp of English was very good."
+            },
+            {
+                "rating": "5",
+                "body": "Great guide, he provided us with a lot of information about the city and places that we visited. Although it is mentioned that the Ribat entrance is included in the price it was not."
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "Le Barberousse",
+        "category": "restaurant",
+        "description": "Terrasse, Places assises, Stationnement pour clientèle, Chaises hautes disponibles, Sert de l'alcool, Bar complet, Bières & Vins, Mastercard acceptée, Visa acceptée, Paiements électroniques, Wi-Fi gratuit, Réservations, Accepte les cartes bancaires, Service de table.",
+        "adress": "Kasbah Hammamet centre ville, Hammamet 8050 Tunisie",
+        "zone": "hammamet",
+        "phone": "+216 72 280 037",
+        "horaire": "12:00-02:00",
+        "comments": [
+            {
+                "rating": "5",
+                "body": "Exellent Je le recommande les yeux fermé J ai pris une souris d agneau tellement tendre Bravo Et merci à Hosdine l agent de sécurité 😍"
+            },
+            {
+                "rating": "4",
+                "body": "Excellent restaurant avec une imprenable vue sur la medina et la mer, excellente cuisine même si les prix restent assez élevées par rapport à la moyenne On reviendra"
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "Chez Robert",
+        "category": "restaurant",
+        "description": "Réservations, Places assises, Sert de l'alcool, Service de table",
+        "adress": "119 Avenue Des Nations Unies, Hammamet 8050 Tunisie",
+        "zone": "hammamet",
+        "phone": "+216 72 280 403",
+        "horaire": "12:00-01:00",
+        "comments": [
+            {
+                "rating": "5",
+                "body": "Ça fait longtemps que j'ai perdu espoir de tomber sur un bon restaurant et là une grande surprise, tout est bien : l'accueil, le decor, la nourriture...nous reviendrons"
+            },
+            {
+                "rating": "3",
+                "body": "Accueil parfait, nourriture excellente (cassolette de fruits de mer et filet de bœuf. Personnel brassant un peu l'air ! Patron excentrique faisant son show au milieu des clients."
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "Le Duo Resto Lounge",
+        "category": "bar",
+        "description": "Réservations, Places assises, Service de table",
+        "adress": "Avenue de la Paix, Hammamet 8050 Tunisie",
+        "zone": "hammamet",
+        "phone": "+216 52 393 969",
+        "horaire": "20:00-04:00",
+        "comments": [
+            {
+                "rating": "5",
+                "body": "On a passé une tres agreable soiree au duo resto lounge a hammamet Service rapide. Menu varié et tres bonne nourriture Acceuil chaleureux Je vous conseille l'endroit"
+            },
+            {
+                "rating": "5",
+                "body": "Repas copieux très bon cocktail super embiance très sympa à recommander Essayer l entrée mezza super le filet flambé une merveille"
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "Pupput Le Bar",
+        "category": "bar",
+        "description": "Réservations, Places assises, Stationnement dans la rue, Sert de l'alcool, Accepte les cartes bancaires, Terrasse, Parking, Télévision, Bar complet, Service de table",
+        "adress": "Boulevard de L'environnement Hotel le President, Hammamet 8050 Tunisie",
+        "zone": "hammamet",
+        "phone": "+216 23 554 433",
+        "horaire": "18:00-02:00",
+        "comments": [
+            {
+                "rating": "5",
+                "body": "Un endroit super sélectionné , bonne bouffe et service rapide . Le personnel sont au petit soin. Merci beaucoup"
+            },
+            {
+                "rating": "1",
+                "body": "malheureusement c'est un bel endroit mal géré, ma femme a été agressée dans la salle de bain par 2 femmes et la sécurité les a fait fuir; dommage car c'était une belle soirée"
+            }
+        ],
+        "photos": ""
+    },
+    {
+        "name": "Hotel Le Sultan",
+        "category": "hotel",
+        "description": "Vous cherchez un endroit où séjourner à Hammamet ? Voilà ce qu’il vous faut : Le Sultan, un hôtel familial qui vous apporte le meilleur de Hammamet à votre portée.",
+        "adress": "Route Touristique, Hammamet 8050 Tunisie",
+        "zone": "hammamet",
+        "phone": "+216 72 280 588",
+        "horaire": "24h/24",
+        "comments": [
+            {
+                "rating": "5",
+                "body": "Excellent séjour au sultan au top l'accueil est a l'écoute avec un grand sourire un grand merci a bouthaina et mona pour l'animation au mini club il on assure avec les enfants a refaire merci beaucoup..."
+            },
+            {
+                "rating": "5",
+                "body": "J'y vais chaque année, et, sans surprise, cette année, la qualité était au RDV. La nourriture reste toujours excellente, le service est irréprochable. C'est l'hôtel préféré des enfants et de leurs parents :)"
+            }
+        ],
+        "photos": ""
+    }
+]

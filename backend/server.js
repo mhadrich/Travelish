@@ -12,4 +12,4 @@ app.use("/admin",bussinessRoutes)
 app.use("/admin",reviewRoutes)
 
 
- app.listen(3000,()=>console.log("server listen to port 3000"))
+ app.listen(3000,()=>console.log("server listend"))
