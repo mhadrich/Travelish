@@ -66,12 +66,6 @@ const SignIn = () => {
             </div>
           </div>
         </div>
-        <div className="logo-wrapper">
-          <div className="logo">
-            <img className="img" alt="Group" src="group-2.png" />
-            <div className="text-wrapper-6">Travelish</div>
-          </div>
-        </div>
       </div>
     </div>
   );

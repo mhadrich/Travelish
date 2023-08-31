@@ -46,12 +46,6 @@ const CreateAccount = () => {
           </div>
           <div className="rectangle" />
         </div>
-        <div className="group">
-          <div className="logo">
-            <img className="img" alt="Group" src="group-2.png" />
-            <div className="text-wrapper-8">Travelish</div>
-          </div>
-        </div>
       </div>
     </div>
   );

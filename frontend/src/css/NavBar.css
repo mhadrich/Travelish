@@ -12,6 +12,7 @@
   position: absolute;
   top: 0;
   width: 168px;
+  cursor: pointer;
 }
 
 .group .img {
@@ -54,6 +55,7 @@
   position: absolute;
   top: 0;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .group .text-wrapper-3 {
@@ -67,6 +69,7 @@
   position: absolute;
   top: 0;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .group .text-wrapper-4 {
@@ -80,6 +83,7 @@
   position: absolute;
   top: 0;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .group .text-wrapper-5 {
@@ -93,14 +97,16 @@
   position: absolute;
   top: 0;
   white-space: nowrap;
+  cursor: pointer;
 }
 
-.group .sign-in {
+.group .sign-up {
   height: 41px;
   left: 1055px;
   position: absolute;
   top: 0;
   width: 83px;
+  cursor: pointer;
 }
 
 .group .overlap-group {

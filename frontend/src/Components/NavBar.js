@@ -51,7 +51,7 @@ export const NavBar = () => {
         </div>
       )}
       {showFullNavBar && (
-        <div className="sign-in">
+        <div className="sign-up">
           <div className="overlap-group">
             <div
               className="text-wrapper-6"
