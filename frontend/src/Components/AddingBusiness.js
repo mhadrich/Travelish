@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import axios from "axios";
 import "../css/AddingBusiness.css";
 // import axios from "axios";
 // import { Link } from "react-router-dom";
@@ -20,13 +21,53 @@ import "../css/AddingBusiness.css";
   const[hours,setHours]=useState('');
   const[Zone,setZone]=useState('');
   const[description,setDescription]=useState('')
+
+
+  const presetKey="efquzmp0"
+  const [file, setFile] = useState(null);
+  const [imageUrl, setImageUrl] = useState(null);
+  console.log(imageUrl);
+
+  const handleFile = (e) => {
+    setFile(e.target.files[0]);
+  };
+
+  const uploadImage = async () => {
+    const form = new FormData();
+    form.append("file", file);
+    form.append("upload_preset", presetKey );
+    try {
+      const response = await axios.post(
+        `https://api.cloudinary.com/v1_1/dkago8t99/image/upload`,
+        form
+      );
+      setImageUrl(response.data.secure_url);
+      
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <div className="adding-business">
       <div className="div">
         <div className="overlap">
           <div className="overlap-2">
-            <div className="rectangle" />
-            <div className="text-wrapper-7">+</div>
+
+
+
+            <div className="rectangle" style={{overflow:"hidden"}} >
+              
+            {imageUrl && (
+       
+          <img src={imageUrl} alt="Uploaded" style={{maxWidth:"100%"}} />
+            )}
+
+            </div>
+
+
+
+            <input className="rectangle" type="file" style={{opacity:"0"}} onClick={handleFile}/>
+            <div className="text-wrapper-7" onClick={uploadImage}>+</div>
             <div className="group-2">
               <div className="text-wrapper-8">Name</div>
               <input className="rectangle-2" onChange={(e)=>{setName(e.target.value)}} />

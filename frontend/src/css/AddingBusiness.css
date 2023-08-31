@@ -152,6 +152,7 @@
   position: absolute;
   top: 120px;
   width: 1140px;
+  cursor: pointer;
 }
 .adding-business .text-wrapper-7 {
   color: #00000033;
@@ -164,6 +165,7 @@
   position: absolute;
   top: 17%;
   white-space: nowrap;
+  cursor: pointer;
 }
 .adding-business .group-2 {
   height: 73px;
