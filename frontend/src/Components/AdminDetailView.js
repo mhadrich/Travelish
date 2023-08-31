@@ -4,7 +4,34 @@ import "../css/AdminDetailView.css";
 import { useState } from 'react';
 // import { useNavigate } from 'react-router-dom';
 
-const AdminDetailView = () => {
+const AdminDetailView = (props) => {
+
+
+  // const {_id,adresse,description,hours,phone} = props.update
+
+  // const [adress,setAdress]= useState("")
+  // const [descriptions,setDescriptions]= useState("")
+  // const [hour,setHour]= useState("")
+  // const [phones,setPhones] = useState("")
+
+  // useEffect(()=>{
+  //   setAdress(adresse)
+  //   setDescriptions(description)
+  //   setHour(hours)
+  //   setPhones(phone)    
+  //   },[])
+
+  //   const handleClick = () => {
+  //     axios.put(`/////////////${}`, {
+  //       adresse: adress,
+  //       description: descriptions,
+  //       hours: hour,
+  //       phone: phones,
+  //     }).then((response) => {
+  //       console.log(response)
+  //     }).catch(err => console.log(err))
+  //   }
+
 
   const [contactForm, setContactForm] = useState(false)
   const [editContact, setEditContact] = useState(true);
@@ -34,23 +61,6 @@ const AdminDetailView = () => {
   return (
     <div className="business-owner">
       <div className="div">
-        <div className="group">
-          <div className="logo">
-            <img className="img" alt="Group" src="group-2.png" />
-            <div className="text-wrapper">Travelish</div>
-          </div>
-          <div className="navbar">
-            <div className="text-wrapper-2">Restaurants</div>
-            <div className="text-wrapper-3">Hotels</div>
-            <div className="text-wrapper-4">Bars</div>
-            <div className="text-wrapper-5">Activities</div>
-          </div>
-          <div className="sign-in">
-            <div className="overlap-group">
-              <div className="text-wrapper-6">username</div>
-            </div>
-          </div>
-        </div>
         <div className="text-wrapper-7">Steak House</div>
         <div className="group-2">
           <div className="text-wrapper-8">70 reviews</div>
@@ -88,47 +98,45 @@ const AdminDetailView = () => {
 
           <div className="text-wrapper-9">Description</div>
           <div className="overlap-wrapper">
-            {showForm ? (
-              <div>  <textarea id="story" name="story" rows="5" cols="33">
-                description here</textarea> </div>
-            ) : (
-              <p> description here.</p>
-            )}
-
+            <div>
+              {showForm ? (
+                <textarea id="story" name="story" rows="5" cols="33" >
+                  {/* onChange={(e) => setDescription(e.target.value)} */}
+                  description here</textarea>
+              ) : (
+                <p> description here.</p>
+              )}
+            </div>
 
             <div className="overlap-3" onClick={toggle} >
-              {editButton ? (
-                <div className="text-wrapper-11" >Edit</div>
-              ) : (
-                <div className="text-wrapper-11" >Submit</div>
-              )}
+              {
+                <div className="text-wrapper-11" >{editButton ? "edit" : "submit"}</div>
+              }
+              {/* onClick={()=>editButton===false && handleClick ()} */}
             </div>
           </div>
         </div>
         <div className="overlap-4">
           <div className="text-wrapper-9">Location &amp; contact</div>
           <div className="overlap-wrapper">
-            <div className="overlap-3" onClick={toggler}>
-              {editContact ? (
-                <div className="text-wrapper-11" >Edit</div>
-              ) : (
-                <div className="text-wrapper-11" >Submit</div>
-              )}            </div>
+
           </div>
           <iframe style={mystyle} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12765.591839929415!2d10.1885956!3d36.8808269!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2cbe05eaab2f3%3A0x13cff2c443049ee1!2sSalle%20de%20sport%20Gold%20gym%20Ennkhilet%20El%20Ghazela!5e0!3m2!1sfr!2stn!4v1693318657076!5m2!1sfr!2stn" ></iframe>
+          <div />
 
           {contactForm ? (
             <div>
               <div className="group-4">
                 <input />
+                {/* onChange={(e) => setHour(e.target.value)} */}
               </div>
-
-
               <div className="group-5">
                 <input />
+                {/* onChange={(e) => setPhones(e.target.value)} */}
               </div>
               <div className="group-6">
                 <input />
+                {/* onChange={(e) => setAdress(e.target.value)} */}
               </div>
             </div>
           )
@@ -138,18 +146,22 @@ const AdminDetailView = () => {
                   <div className="text-wrapper-12">16:00 - 03:00</div>
                   {/* <img className="image" alt="Image" src="image-5.png" /> */}
                 </div>
-
                 <div className="group-5">
                   <div className="text-wrapper-13">55555555</div>
                   {/* <img className="mask-group-2" alt="Mask group" src="image.png" /> */}
                 </div>
-
                 <div className="group-6">
                   <p className="p">14 Rue de Liberté, Tunis</p>
                   {/* <img className="image" alt="Image" src="image-7.png" /> */}
                 </div>
               </div>
+
             )}
+          <div className="overlap-5" onClick={toggler}>
+            {
+              <div className="text-wrapper-11" >{editContact ? "Edit" : "submit"}</div>
+            }
+          </div>
         </div>
       </div>
     </div>
