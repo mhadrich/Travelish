@@ -1,7 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import "../css/SignIn.css";
 
 const SignIn = () => {
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSignIn = async () => {
+    try {
+      const response = await axios.get(`/getOneAdmin/${email}`);
+      const adminData = response.data;
+
+      if (adminData && adminData.password === password) {
+        // Successfully signed in
+        // You can perform any additional actions here
+
+        // For now, let's navigate to the home page
+        navigate("/");
+      } else {
+        setError("Invalid email or password");
+      }
+    } catch (error) {
+      setError("An error occurred while signing in");
+    }
+  };
   return (
     <div className="sign-in">
       <div className="div">
@@ -18,8 +43,11 @@ const SignIn = () => {
                 <div className="text-wrapper-2">Password</div>
               </div>
               <div className="text-button">
-                <div className="text-wrapper-3">Sign In</div>
+                <div className="text-wrapper-3" onClick={handleSignIn}>
+                  Sign In
+                </div>
               </div>
+              {error && <div className="error-message">{error}</div>}
               <div className="description-link">
                 <div className="div-wrapper-2">
                   <div className="text-wrapper-4">Don’t have an account?</div>
