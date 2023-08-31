@@ -1,4 +1,6 @@
 .group {
+  margin: auto;
+  margin-top: 20px;
   height: 41px;
   position: relative;
   width: 1136px;

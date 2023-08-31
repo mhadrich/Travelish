@@ -190,6 +190,7 @@
   background-color: #F7F7F7;
   border: 1px solid;
   border-color: #000000;
+  font-family: "Sansation-Regular", Helvetica;
   border-radius: 10px;
   height: 48px;
   left: 0;
@@ -265,6 +266,7 @@
 .button {
   color: #fff;
   background-color: #000000;
+  font-family: "Sansation-Regular", Helvetica;
   margin-top: 400px;
   margin-left: 30px;
   border-radius: 5px;
