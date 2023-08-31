@@ -22,7 +22,7 @@ const UserDetailView = () => {
             <div className="text-wrapper-4">Bars</div>
             <div className="text-wrapper-5">Activities</div>
           </div> */}
-          <div className="sign-in">
+          {/* <div className="sign-in">
             <div className="overlap">
               <div className="text-wrapper-6">username</div>
               <div className="overlap-group-wrapper">
@@ -31,7 +31,7 @@ const UserDetailView = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="text-wrapper-8">Steak House</div>
         <div className="group-2">

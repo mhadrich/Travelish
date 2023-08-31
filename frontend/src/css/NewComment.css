@@ -4,20 +4,25 @@
   flex-direction: row;
   justify-content: center;
   width: 100%;
+
 }
 
 .add-comment .div {
   background-color: #ffffff;
   height: 1024px;
   width: 1440px;
+
 }
 
 .add-comment .group {
   height: 459px;
-  left: 249px;
+  /* left: 249px; */
   position: relative;
-  top: 283px;
+  top: 100px;
   width: 948px;
+  /* margin-left: -100px;
+  margin-top: -90px */
+
 }
 
 .add-comment .tell-us-how-was-your {
@@ -178,4 +183,17 @@
   position: absolute;
   top: 161px;
   width: 460px;
+}
+
+.add-comment .button {
+  color: white;
+  background-color: #000000;
+  font-family: "Sansation-Regular", Helvetica;
+  margin-top: 150px;
+  margin-left: 500px;
+  border-radius: 5px;
+  height: 48px;
+  position: relative;
+  width: 300px;
+  cursor: pointer;
 }

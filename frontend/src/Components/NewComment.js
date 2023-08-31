@@ -1,7 +1,19 @@
 import React from "react";
 import "../css/NewComment.css";
+import  {useState} from 'react';
+import axios from "axios";
 
 const NewComment = () => {
+
+  const [add,setAdd]= useState({review:""})
+  const handleChange =(e)=>{
+    setAdd({[e.target.review]:e.target.value})
+}
+const handleClick = ()=>{
+  axios.post("//////",add).then((result)=>console.log(result)).catch(err=>console.log(err))
+  }
+
+
   return (
     <div className="add-comment">
       <div className="div">
@@ -28,10 +40,12 @@ const NewComment = () => {
             <img className="star-3" alt="Star" src="https://seeklogo.com/images/R/red-star-logo-2D3327A276-seeklogo.com.png" />
             <img className="star-4" alt="Star" src="https://seeklogo.com/images/R/red-star-logo-2D3327A276-seeklogo.com.png" />
           </div>
-          <textarea className="rectangle-2" />
+          <textarea className="rectangle-2"   onChange={(e)=>handleChange(e)} />
         </div>
         <div className="buttonPlace">
-      <button className="button">Submit</button>
+      <button className="button" onClick={()=>{handleClick()
+alert("added  succesfully")
+ }} >Submit</button>
       </div>
       </div>
     </div>
