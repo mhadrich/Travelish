@@ -2,21 +2,26 @@ import React from "react";
 
 import "../css/UserDetailView.css";
 
+import { useNavigate } from 'react-router-dom';
+
+
 const UserDetailView = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="user-business-view">
       <div className="div">
         <div className="group">
-          <div className="logo">
+          {/* <div className="logo">
             <img className="img" alt="Group" src="group-2.png" />
             <div className="text-wrapper">Travelish</div>
-          </div>
-          <div className="navbar">
+          </div> */}
+          {/* <div className="navbar">
             <div className="text-wrapper-2">Restaurants</div>
             <div className="text-wrapper-3">Hotels</div>
             <div className="text-wrapper-4">Bars</div>
             <div className="text-wrapper-5">Activities</div>
-          </div>
+          </div> */}
           <div className="sign-in">
             <div className="overlap">
               <div className="text-wrapper-6">username</div>
@@ -56,8 +61,9 @@ const UserDetailView = () => {
             <img className="star-5" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
           </div>
           <img className="vector" alt="Vector" src="vector-8.svg" />
-          <div className="div-wrapper">
+          <div className="div-wrapper" onClick={() => { navigate("/NewComment") }} >
             <div className="text-wrapper-11">Write a Review</div>
+
           </div>
         </div>
         <div className="overlap-3">
