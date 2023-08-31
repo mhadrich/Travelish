@@ -1,38 +1,40 @@
 module.exports = (sequelize, DataTypes) => {
-  const Reviews = sequelize.define("Reviews", {
+  const Review = sequelize.define("Review", {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
     },
 
-    comments: {
-      type: DataTypes.STRING,
+    comments : {
+      type : DataTypes.STRING,
       allowNull: false,
-    },
-    rating: {
-      type: DataTypes.INTEGER,
+    } , 
+
+rating : {
+      type : DataTypes.STRING,
       allowNull: false,
-    },
+    } , 
+    
     adminID: {
       type: DataTypes.INTEGER,
-      references: { model: "admins", key: "id" },
+      references: { model: "Admins", key: "id" }, // Make sure the model name matches
     },
     bussinessID: {
       type: DataTypes.INTEGER,
-      references: { model: "bussinesses", key: "id" },
+      references: { model: "Bussinesses", key: "id" }, // Make sure the model name matches
     },
   });
 
-  Reviews.associate = (Model) => {
-    Reviews.BelongsTo(Model.Admin, {
+  Review.associate = (models) => {
+    Review.belongsTo(models.Admin, {
       onDelete: "cascade",
     });
-    Reviews.associate = (Model) => {
-      Reviews.BelongsTo(Model.Bussiness, {
-        onDelete: "cascade",
-      });
-    };
+    Review.belongsTo(models.Bussiness, {
+      onDelete: "cascade",
+    });
   };
-  return Reviews;
+
+  return Review;
 };
+

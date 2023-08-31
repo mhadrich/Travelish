@@ -9,10 +9,10 @@ const AdminDetailView = (props) => {
 
   // const {_id,adresse,description,hours,phone} = props.update
 
-  // const [adress,setAdress]= useState("")
-  // const [descriptions,setDescriptions]= useState("")
-  // const [hour,setHour]= useState("")
-  // const [phones,setPhones] = useState("")
+  const [adress,setAdress]= useState("")
+  const [descriptions,setDescriptions]= useState("")
+  const [hour,setHour]= useState("")
+  const [phones,setPhones] = useState("")
 
   // useEffect(()=>{
   //   setAdress(adresse)
@@ -100,8 +100,7 @@ const AdminDetailView = (props) => {
           <div className="overlap-wrapper">
             <div>
               {showForm ? (
-                <textarea id="story" name="story" rows="5" cols="33" >
-                  {/* onChange={(e) => setDescription(e.target.value)} */}
+                <textarea id="story" name="story" rows="5" cols="33"   onChange={(e) => setDescriptions(e.target.value)}>
                   description here</textarea>
               ) : (
                 <p> description here.</p>
@@ -127,16 +126,13 @@ const AdminDetailView = (props) => {
           {contactForm ? (
             <div>
               <div className="group-4">
-                <input />
-                {/* onChange={(e) => setHour(e.target.value)} */}
+                <input onChange={(e) => setHour(e.target.value)} />
               </div>
               <div className="group-5">
-                <input />
-                {/* onChange={(e) => setPhones(e.target.value)} */}
+                <input onChange={(e) => setPhones(e.target.value)} />
               </div>
               <div className="group-6">
-                <input />
-                {/* onChange={(e) => setAdress(e.target.value)} */}
+                <input onChange={(e) => setAdress(e.target.value)} />
               </div>
             </div>
           )

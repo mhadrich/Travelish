@@ -2,6 +2,8 @@ const express = require("express");
 const route = express.Router();
 // const { db, bussiness } = require('../models/index.js'); 
 const db =require ("./../models/index")
+
+
 route.post("/createBussiness", (req, res) => {
  db.Bussiness.create({
     name:req.body.name,
