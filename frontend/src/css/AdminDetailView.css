@@ -321,17 +321,33 @@
   height: 48px;
   left: 26px;
   position: absolute;
-  top: 306px;
+  top: 30%;
+  margin-top: 10px;
   width: 321px;
 }
 
 .business-owner .overlap-3 {
+  
   background-color: #000000;
   border-radius: 5px;
+  margin-top: 20%;
   height: 48px;
   position: relative;
   width: 319px;
+  
 }
+.business-owner .overlap-5 {
+  
+  background-color: #000000;
+  border-radius: 5px;
+  margin-top: 40%;
+  height: 48px;
+  position: relative;
+  width: 319px;
+  margin-left: 10%;
+  
+}
+
 
 .business-owner .text-wrapper-11 {
   color: #ffffff;
