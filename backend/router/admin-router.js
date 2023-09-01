@@ -92,40 +92,40 @@ route.post("/login" ,  async (req, res) => {
 route.get("/getOneAdmin/:id", verifyToken ,  (req, res) => {
   Admin.findOne({ where: { id: req.params.id }},{includes : [Admin.id]})
     .then((result) => {
-      res.status(200).send(result);
+      res.status(200).json(result);
     })
     .catch((err) => {
-      res.status(500).send(err);
+      res.status(500).json(err);
     });
 });
 
 route.get("/getAllAdmins", verifyToken , (req, res) => {
   Admin.findAll({includes:req.body.authorization})
     .then((result) => {
-      res.status(200).send(result);
+      res.status(200).json(result);
     })
     .catch((err) => {
-      res.status(500).send(err);
+      res.status(500).json(err);
     });
 });
 
 route.put("/updateOneAdmin/:id", verifyToken ,  (req, res) => {
   Admin.update(req.body, { where: { id: req.params.id } })
     .then((result) => {
-      res.status(200).send(result);
+      res.status(200).json(result);
     })
     .catch((err) => {
-      res.status(500).send(err);
+      res.status(500).json(err);
     });
 });
 
 route.delete("/deleteOneAdmin/:id", verifyToken , (req, res) => {
   Admin.destroy({ where: { id: req.params.id } })
     .then((result) => {
-      res.status(200).send(result);
+      res.status(200).json(result);
     })
     .catch((err) => {
-      res.status(500).send(err);
+      res.status(500).json(err);
     });
 });
 

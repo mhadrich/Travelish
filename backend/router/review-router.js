@@ -12,50 +12,50 @@ route.post("/createReview", (req, res) => {
 
  })
     .then((result) => {
-      res.status(200).send(result);
+      res.status(200).json(result);
     })
     .catch((err) => {
-      res.status(500).send(err);
+      res.status(500).json(err);
     });
 });
 
 route.get("/getOneReview/:id", (req, res) => {
   db.Review.findOne({ where: { id: req.params.id } })
     .then((result) => {
-      res.status(200).send(result);
+      res.status(200).json(result);
     })
     .catch((err) => {
-      res.status(500).send(err);
+      res.status(500).json(err);
     });
 });
 
 route.get("/getAllReviews", (req, res) => {
   db.Review.findAll()
     .then((result) => {
-      res.status(200).send(result);
+      res.status(200).json(result);
     })
     .catch((err) => {
-      res.status(500).send(err);
+      res.status(500).json(err);
     });
 });
 
 route.put("/updateOneReview/:id", (req, res) => {
   db.Review.update(req.body, { where: { id: req.params.id } })
     .then((result) => {
-      res.status(200).send(result);
+      res.status(200).json(result);
     })
     .catch((err) => {
-      res.status(500).send(err);
+      res.status(500).json(err);
     });
 });
 
 route.delete("/deleteOneReview/:id", (req, res) => {
   db.Review.destroy({ where: { id: req.params.id } })
     .then((result) => {
-      res.status(200).send(result);
+      res.status(200).json(result);
     })
     .catch((err) => {
-      res.status(500).send(err);
+      res.status(500).json(err);
     });
 });
 

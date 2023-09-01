@@ -63,6 +63,7 @@
   position: absolute;
   top: 567px;
   width: 501px;
+  cursor:default;
 }
 
 .create-account .text-wrapper {
@@ -110,7 +111,7 @@
   border-radius: 10px;
   display: flex;
   gap: 20px;
-  height: 60px;
+  height: 40px;
   padding: 10px 20px;
   position: relative;
   width: 400px;
@@ -136,7 +137,7 @@
   border-radius: 10px;
   display: flex;
   gap: 20px;
-  height: 60px;
+  height: 40px;
   left: 108px;
   padding: 10px 20px;
   position: absolute;
@@ -151,7 +152,7 @@
   border-radius: 10px;
   display: flex;
   gap: 20px;
-  height: 60px;
+  height: 40px;
   left: 108px;
   padding: 10px 20px;
   position: absolute;
@@ -169,7 +170,7 @@
   top: 563px;
 }
 
-.create-account .text-button {
+.create-account .create-button {
   align-items: center;
   background-color: #000000;
   border-radius: 10px;
@@ -180,6 +181,7 @@
   padding: 0px 17px;
   position: relative;
   width: 410px;
+  cursor:pointer;
 }
 
 .create-account .text-wrapper-4 {
@@ -224,7 +226,7 @@
   width: fit-content;
 }
 
-.create-account .text-wrapper-6 {
+.create-account .signin-link {
   color: #000000;
   font-family: "Sansation-Regular", Helvetica;
   font-size: 13px;
@@ -236,9 +238,10 @@
   text-decoration: underline;
   white-space: nowrap;
   width: fit-content;
+  cursor: pointer;
 }
 
-.create-account .text-wrapper-7 {
+.create-account .input-field-BO {
   color: #00000066;
   font-family: "Sansation-Regular", Helvetica;
   font-size: 13px;
@@ -247,7 +250,7 @@
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 537px;
+  top: 527px;
   white-space: nowrap;
 }
 
@@ -258,7 +261,7 @@
   height: 15px;
   left: 207px;
   position: absolute;
-  top: 537px;
+  top: 525px;
   width: 15px;
 }
 
