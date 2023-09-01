@@ -18,16 +18,10 @@ const CreateAccount = () => {
               <div className="text-wrapper">Create account</div>
               <div className="frame">
                 <div className="text-wrapper-2">Let’s get you started!</div>
-                <div className="input-field">
-                  <div className="text-wrapper-3">Name</div>
-                </div>
+                <input className="input-field-userName" placeholder="Name"></input>
               </div>
-              <div className="div-wrapper">
-                <div className="text-wrapper-3">Email</div>
-              </div>
-              <div className="input-field-2">
-                <div className="text-wrapper-3">Password</div>
-              </div>
+              <input className="input-field-Email" placeholder="Email"></input>
+              <input type="password" className="input-field-Password" placeholder="Password"></input>
               <div className="frame-2">
                 <div className="text-button">
                   <div className="text-wrapper-4">Create account</div>
@@ -44,7 +38,7 @@ const CreateAccount = () => {
               <div className="text-wrapper-7">Business owner</div>
             </div>
           </div>
-          <div className="rectangle" />
+          <input type="radio" className="rectangle" />
         </div>
       </div>
     </div>

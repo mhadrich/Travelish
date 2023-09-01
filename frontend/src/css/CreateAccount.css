@@ -102,7 +102,8 @@
   width: 400px;
 }
 
-.create-account .input-field {
+.create-account .input-field-userName {
+  font-family: "Sansation-Regular", Helvetica;
   align-items: center;
   border: 1px solid;
   border-color: #00000066;
@@ -117,7 +118,7 @@
 
 .create-account .text-wrapper-3 {
   color: #00000066;
-  font-family: "Sansation-Regular", Helvetica;
+  
   font-size: 17px;
   font-weight: 400;
   letter-spacing: 0;
@@ -127,7 +128,8 @@
   width: fit-content;
 }
 
-.create-account .div-wrapper {
+.create-account .input-field-Email {
+  font-family: "Sansation-Regular", Helvetica;
   align-items: center;
   border: 1px solid;
   border-color: #00000066;
@@ -142,7 +144,7 @@
   width: 400px;
 }
 
-.create-account .input-field-2 {
+.create-account .input-field-Password {
   align-items: center;
   border: 1px solid;
   border-color: #00000066;
@@ -177,7 +179,7 @@
   justify-content: space-around;
   padding: 0px 17px;
   position: relative;
-  width: 400px;
+  width: 410px;
 }
 
 .create-account .text-wrapper-4 {
@@ -252,7 +254,7 @@
 .create-account .rectangle {
   border: 1px solid;
   border-color: #00000066;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   height: 15px;
   left: 207px;
   position: absolute;
