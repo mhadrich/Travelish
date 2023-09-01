@@ -1,0 +1,293 @@
+.create-account {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.create-account .div {
+  background-color: #ffffff;
+  height: 1024px;
+  position: relative;
+  width: 1440px;
+}
+
+.create-account .overlap {
+  height: 761px;
+  left: 110px;
+  position: absolute;
+  top: 163px;
+  width: 1226px;
+}
+
+.create-account .overlap-group-wrapper {
+  height: 761px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1226px;
+}
+
+.create-account .overlap-group {
+  background-color: #ffffff;
+  border-radius: 40px;
+  box-shadow: 0px 0px 74px #00000040;
+  height: 761px;
+  position: relative;
+  width: 1220px;
+}
+
+.create-account .we-re-here-to-give-wrapper {
+  background-image: url(https://drscdn.500px.org/photo/1023783987/q%3D80_m%3D2000/v2?sig=cf148b1b4ca618f371c71472f0a2e2d5a9a8008e30be827b9eee574655709da1);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 30px;
+  height: 728px;
+  left: 610px;
+  position: absolute;
+  top: 15px;
+  width: 593px;
+}
+
+.create-account .we-re-here-to-give {
+  color: #ffffff;
+  font-family: "Sansation-Regular", Helvetica;
+  font-size: 34px;
+  font-weight: 400;
+  left: -31px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 567px;
+  width: 501px;
+}
+
+.create-account .text-wrapper {
+  color: #000000;
+  font-family: "Sansation-Regular", Helvetica;
+  font-size: 50px;
+  font-weight: 400;
+  left: 108px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 121px;
+  white-space: nowrap;
+}
+
+.create-account .frame {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+  left: 108px;
+  position: absolute;
+  top: 217px;
+}
+
+.create-account .text-wrapper-2 {
+  color: #000000;
+  font-family: "Sansation-Regular", Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: 400px;
+}
+
+.create-account .input-field {
+  align-items: center;
+  border: 1px solid;
+  border-color: #00000066;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  height: 60px;
+  padding: 10px 20px;
+  position: relative;
+  width: 400px;
+}
+
+.create-account .text-wrapper-3 {
+  color: #00000066;
+  font-family: "Sansation-Regular", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.create-account .div-wrapper {
+  align-items: center;
+  border: 1px solid;
+  border-color: #00000066;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  height: 60px;
+  left: 108px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 348px;
+  width: 400px;
+}
+
+.create-account .input-field-2 {
+  align-items: center;
+  border: 1px solid;
+  border-color: #00000066;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  height: 60px;
+  left: 108px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 448px;
+  width: 400px;
+}
+
+.create-account .frame-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+  left: 108px;
+  position: absolute;
+  top: 563px;
+}
+
+.create-account .text-button {
+  align-items: center;
+  background-color: #000000;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  height: 60px;
+  justify-content: space-around;
+  padding: 0px 17px;
+  position: relative;
+  width: 400px;
+}
+
+.create-account .text-wrapper-4 {
+  color: #ffffff;
+  font-family: "Sansation-Regular", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.create-account .description-link {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  position: relative;
+  width: 400px;
+}
+
+.create-account .div-wrapper-2 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  position: relative;
+}
+
+.create-account .text-wrapper-5 {
+  color: #00000066;
+  font-family: "Sansation-Regular", Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.create-account .text-wrapper-6 {
+  color: #000000;
+  font-family: "Sansation-Regular", Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  text-decoration: underline;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.create-account .text-wrapper-7 {
+  color: #00000066;
+  font-family: "Sansation-Regular", Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  left: 108px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 537px;
+  white-space: nowrap;
+}
+
+.create-account .rectangle {
+  border: 1px solid;
+  border-color: #00000066;
+  border-radius: 5px;
+  height: 15px;
+  left: 207px;
+  position: absolute;
+  top: 537px;
+  width: 15px;
+}
+
+.create-account .group {
+  height: 40px;
+  left: 152px;
+  position: absolute;
+  top: 27px;
+  width: 166px;
+}
+
+.create-account .logo {
+  height: 40px;
+  position: relative;
+  width: 168px;
+}
+
+.create-account .img {
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+}
+
+.create-account .text-wrapper-8 {
+  color: #000000;
+  font-family: "Sansation-Regular", Helvetica;
+  font-size: 30px;
+  font-weight: 400;
+  left: 42px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3px;
+  white-space: nowrap;
+}
