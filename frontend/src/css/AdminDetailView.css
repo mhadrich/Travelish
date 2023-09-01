@@ -334,8 +334,8 @@
   height: 48px;
   position: relative;
   width: 319px;
-  
 }
+
 .business-owner .overlap-5 {
   
   background-color: #000000;
@@ -478,3 +478,9 @@ label {
   margin-bottom: 10px;
 }
 
+
+
+#description {
+  margin-bottom: 168px;
+  margin-top: -40px;
+}
