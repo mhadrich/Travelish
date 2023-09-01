@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 import NavBar from "./NavBar";
 import { useNavigate, useLocation } from "react-router-dom";
 import SearchResults from "./SearchResults"; // Import the SearchResults component
 import "../css/Home.css";
-
+import 'swiper/css'
 const Home = ({ data, trigger, setTrigger }) => {
 
 
@@ -52,12 +53,21 @@ const Home = ({ data, trigger, setTrigger }) => {
           </div>
 
         </div>
+        {/* <div className="image-container">
+  {data.map((e, i) => (
+    <div className="image-card" key={i}>
+      <img className="swiper-image" alt="Rectangle" src={e.images} />
+    </div>
+  ))}
+</div> */}
+<Swiper>
+      {data.map((item, index) => (
+        <SwiperSlide key={index}>
+          <img  src={item.images} alt={`Slide ${index}`} style={{width:"50%"}}/>
+        </SwiperSlide>
+      ))}
+    </Swiper>
 
-        {data.map((e, i) => {
-          return (
-              <img className="rectangle" alt="Rectangle" src={e.images} />
-              )
-            })}
 
               <div >
               <div className="text-wrapper-9" >Top things to Do</div>
