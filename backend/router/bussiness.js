@@ -18,50 +18,50 @@ route.post("/createBussiness", (req, res) => {
 
  })
     .then((result) => {
-      res.status(200).send(result);
+      res.status(200).json(result);
     })
     .catch((err) => {
-      res.status(500).send(err);
+      res.status(500).json(err);
     });
 });
 
 route.get("/getOneBussiness/:id", (req, res) => {
   db.Bussiness.findOne({ where: { id: req.params.id } })
     .then((result) => {
-      res.status(200).send(result);
+      res.status(200).json(result);
     })
     .catch((err) => {
-      res.status(500).send(err);
+      res.status(500).json(err);
     });
 });
 
 route.get("/getAllBussinesss", (req, res) => {
   db.Bussiness.findAll()
     .then((result) => {
-      res.status(200).send(result);
+      res.status(200).json(result);
     })
     .catch((err) => {
-      res.status(500).send(err);
+      res.status(500).json(err);
     });
 });
 
 route.put("/updateOneBussiness/:id", (req, res) => {
   db.Bussiness.update(req.body, { where: { id: req.params.id } })
     .then((result) => {
-      res.status(200).send(result);
+      res.status(200).json(result);
     })
     .catch((err) => {
-      res.status(500).send(err);
+      res.status(500).json(err);
     });
 });
 
 route.delete("/deleteOneBussiness/:id", (req, res) => {
   db.Bussiness.destroy({ where: { id: req.params.id } })
     .then((result) => {
-      res.status(200).send(result);
+      res.status(200).json(result);
     })
     .catch((err) => {
-      res.status(500).send(err);
+      res.status(500).json(err);
     });
 });
 

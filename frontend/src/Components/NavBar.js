@@ -5,7 +5,7 @@ export const NavBar = () => {
   const navigate = useNavigate();
   const location = useLocation(); // Get the current location
   // Determine whether to show the full NavBar or just the logo
-  const showFullNavBar = location.pathname !== "/SignIn" || location.pathname !== '/CreateAccount';
+  const showFullNavBar = location.pathname !== "/SignIn" && location.pathname !== '/CreateAccount';
   return (
     <div className="group">
       <div className="logo" onClick={() => navigate("/")}>

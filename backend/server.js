@@ -13,5 +13,4 @@ app.use("/admin",adminRoutes)
 app.use("/bussiness",bussinessRoutes)
 app.use("/review",reviewRoutes)
 
-
  app.listen(5000,()=>console.log("server  listend"))

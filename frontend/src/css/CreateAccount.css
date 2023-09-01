@@ -63,6 +63,7 @@
   position: absolute;
   top: 567px;
   width: 501px;
+  cursor:default;
 }
 
 .create-account .text-wrapper {
@@ -102,14 +103,15 @@
   width: 400px;
 }
 
-.create-account .input-field {
+.create-account .input-field-userName {
+  font-family: "Sansation-Regular", Helvetica;
   align-items: center;
   border: 1px solid;
   border-color: #00000066;
   border-radius: 10px;
   display: flex;
   gap: 20px;
-  height: 60px;
+  height: 40px;
   padding: 10px 20px;
   position: relative;
   width: 400px;
@@ -117,7 +119,7 @@
 
 .create-account .text-wrapper-3 {
   color: #00000066;
-  font-family: "Sansation-Regular", Helvetica;
+  
   font-size: 17px;
   font-weight: 400;
   letter-spacing: 0;
@@ -127,14 +129,15 @@
   width: fit-content;
 }
 
-.create-account .div-wrapper {
+.create-account .input-field-Email {
+  font-family: "Sansation-Regular", Helvetica;
   align-items: center;
   border: 1px solid;
   border-color: #00000066;
   border-radius: 10px;
   display: flex;
   gap: 20px;
-  height: 60px;
+  height: 40px;
   left: 108px;
   padding: 10px 20px;
   position: absolute;
@@ -142,14 +145,14 @@
   width: 400px;
 }
 
-.create-account .input-field-2 {
+.create-account .input-field-Password {
   align-items: center;
   border: 1px solid;
   border-color: #00000066;
   border-radius: 10px;
   display: flex;
   gap: 20px;
-  height: 60px;
+  height: 40px;
   left: 108px;
   padding: 10px 20px;
   position: absolute;
@@ -167,7 +170,7 @@
   top: 563px;
 }
 
-.create-account .text-button {
+.create-account .create-button {
   align-items: center;
   background-color: #000000;
   border-radius: 10px;
@@ -177,7 +180,8 @@
   justify-content: space-around;
   padding: 0px 17px;
   position: relative;
-  width: 400px;
+  width: 410px;
+  cursor:pointer;
 }
 
 .create-account .text-wrapper-4 {
@@ -222,7 +226,7 @@
   width: fit-content;
 }
 
-.create-account .text-wrapper-6 {
+.create-account .signin-link {
   color: #000000;
   font-family: "Sansation-Regular", Helvetica;
   font-size: 13px;
@@ -234,9 +238,10 @@
   text-decoration: underline;
   white-space: nowrap;
   width: fit-content;
+  cursor: pointer;
 }
 
-.create-account .text-wrapper-7 {
+.create-account .input-field-BO {
   color: #00000066;
   font-family: "Sansation-Regular", Helvetica;
   font-size: 13px;
@@ -245,18 +250,18 @@
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 537px;
+  top: 527px;
   white-space: nowrap;
 }
 
 .create-account .rectangle {
   border: 1px solid;
   border-color: #00000066;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   height: 15px;
   left: 207px;
   position: absolute;
-  top: 537px;
+  top: 525px;
   width: 15px;
 }
 

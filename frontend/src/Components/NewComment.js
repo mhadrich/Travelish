@@ -1,16 +1,46 @@
 import React from "react";
 import "../css/NewComment.css";
-import  {useState} from 'react';
+import { useState } from 'react';
 import axios from "axios";
+import Rating from '@mui/material/Rating';
+import Box from '@mui/material/Box';
+import StarIcon from '@mui/icons-material/Star';
 
-const NewComment = () => {
-
-  const [add,setAdd]= useState({review:""})
-  const handleChange =(e)=>{
-    setAdd({[e.target.review]:e.target.value})
+const labels = {
+  0: '',
+  1: 'Useless',
+  2: 'Poor',
+  3: 'Ok',
+  4: 'Good',
+  5: 'Excellent',
+};
+function getLabelText(value) {
+  return `${value} Star${value !== 1 ? 's' : ''}, ${labels[value]}`;
 }
-const handleClick = ()=>{
-  axios.post("//////",add).then((result)=>console.log(result)).catch(err=>console.log(err))
+
+
+
+const NewComment = (props) => {
+
+
+const obj = props.data
+
+
+  const [value, setValue] = React.useState(0);
+  const [hover, setHover] = React.useState(-1);
+
+
+
+  const [rate, setRate] = useState(0)
+  const [review, setReview] = useState('')
+
+
+  const handleChange = (e) => {
+    setReview(e.target.value)
+    setRate(value)
+  }
+  const handleClick = () => {
+    axios.post("//////", { rating: rate, comments: review, adminID: obj.adminID , bussinessID: obj.bussinessID }).then((result) => console.log(result)).catch(err => console.log(err))
   }
 
 
@@ -34,22 +64,38 @@ const handleClick = ()=>{
           <p className="text-wrapper-2">How would you rate your experience?</p>
           <div className="text-wrapper-3">Write a review</div>
           <div className="group-2">
-            <img className="star" alt="Star" src="https://seeklogo.com/images/R/red-star-logo-2D3327A276-seeklogo.com.png" />
-            <img className="img" alt="Star" src="https://seeklogo.com/images/R/red-star-logo-2D3327A276-seeklogo.com.png" />
-            <img className="star-2" alt="Star" src="https://seeklogo.com/images/R/red-star-logo-2D3327A276-seeklogo.com.png" />
-            <img className="star-3" alt="Star" src="https://seeklogo.com/images/R/red-star-logo-2D3327A276-seeklogo.com.png" />
-            <img className="star-4" alt="Star" src="https://seeklogo.com/images/R/red-star-logo-2D3327A276-seeklogo.com.png" />
+            <Box
+              sx={{
+                width: 200,
+                display: 'flex',
+                alignItems: 'center',
+              }}
+            >
+              <Rating
+                name="hover-feedback"
+                value={value}
+                getLabelText={getLabelText}
+                onChange={(event, newValue) => {
+                  setValue(newValue);
+                }}
+                onChangeActive={(event, newHover) => {
+                  setHover(newHover);
+                }}
+                emptyIcon={<StarIcon style={{ opacity: 0.2 }} fontSize="inherit" />}
+              />
+            </Box>
           </div>
-          <textarea className="rectangle-2"   onChange={(e)=>handleChange(e)} />
+          <textarea className="rectangle-2" onChange={(e) => handleChange(e)} />
         </div>
         <div className="buttonPlace">
-      <button className="button" onClick={()=>{handleClick()
-alert("added  succesfully")
- }} >Submit</button>
-      </div>
+          <button className="button" onClick={() => {
+            handleClick()
+            alert("added  succesfully")
+          }} >Submit</button>
+        </div>
       </div>
     </div>
-    
+
   );
 };
 

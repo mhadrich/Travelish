@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React from "react";
+import { useState , useEffect } from "react";
 import axios from "axios";
 import "../css/AddingBusiness.css";
+import { useNavigate } from "react-router-dom";
 // import axios from "axios";
 // import { Link } from "react-router-dom";
 const AddingBusiness = () => {
@@ -22,6 +23,7 @@ const AddingBusiness = () => {
   const[Zone,setZone]=useState('');
   const[Description,setDescription]=useState('')
   const[Category,setCategory]=useState('')
+  const navigate = useNavigate()
 
 
   const presetKey="efquzmp0"
@@ -51,9 +53,8 @@ const AddingBusiness = () => {
 
 const handleSubmit=(e)=>{
 e.preventDefault()
-
-
-  axios.post('http://localhost:4000/admin/createBussiness',{
+navigate('/AdminDashboard')
+  axios.post('http://localhost:5000/bussiness/createBussiness',{
     name:Name,
     adresse:Adress,
     description:Description,
