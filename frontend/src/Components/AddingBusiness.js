@@ -17,10 +17,11 @@ const AddingBusiness = () => {
 // }
   const[Name,setName]=useState('');
   const[Adress,setAdress]=useState('');
-  const[phone,setPhone]=useState('');
-  const[hours,setHours]=useState('');
+  const[Phone,setPhone]=useState('');
+  const[Hours,setHours]=useState('');
   const[Zone,setZone]=useState('');
-  const[description,setDescription]=useState('')
+  const[Description,setDescription]=useState('')
+  const[Category,setCategory]=useState('')
 
 
   const presetKey="efquzmp0"
@@ -47,6 +48,27 @@ const AddingBusiness = () => {
       console.log(error);
     }
   };
+
+const handleSubmit=(e)=>{
+e.preventDefault()
+
+
+  axios.post('http://localhost:4000/admin/createBussiness',{
+    name:Name,
+    adresse:Adress,
+    description:Description,
+    category:Category,
+    images:imageUrl,
+    hours:Hours,
+    phone:Phone,
+    zone:Zone
+  }).then((res)=>{
+    console.log(res);
+  }).catch((err)=>{
+    console.log(err);
+  })
+}
+
   return (
     <div className="adding-business">
       <div className="div">
@@ -73,7 +95,7 @@ const AddingBusiness = () => {
               <input className="rectangle-2" onChange={(e)=>{setName(e.target.value)}} />
             </div>
             <div className="group-3">
-              <div className="text-wrapper-8">Zone</div>
+              <div className="text-wrapper-8" onChange={(e)=>{setZone(e.target.value)}}>Zone</div>
               <select className="rectangle-2">
               <option>Hammamet</option>
               <option>Sousse</option>
@@ -97,7 +119,7 @@ const AddingBusiness = () => {
           <input className="rectangle-2" onChange={(e)=>{setHours(e.target.value)}} />
         </div>
         <div className="group-7">
-          <div className="text-wrapper-8">Category</div>
+          <div className="text-wrapper-8" onChange={(e)=>{setCategory(e.target.value)}}>Category</div>
           <select className="rectangle-2">
             <option>Hotels</option>
             <option>Restaurants</option>
@@ -109,7 +131,7 @@ const AddingBusiness = () => {
           <div className="text-wrapper-8">Description</div>
           <input  className="rectangle-3" onChange={(e)=>{setDescription(e.target.value)}} />
           <div className="buttonPlace">
-      <button className="button">Submit</button>
+      <button className="button" onClick={handleSubmit}>Submit</button>
       </div>
         </div>
       </div>
