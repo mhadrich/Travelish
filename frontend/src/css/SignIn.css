@@ -125,6 +125,7 @@
   position: absolute;
   top: 100px;
   width: 350px;
+  cursor: pointer;
 }
 
 .sign4in .text-wrappere-3 {
@@ -146,7 +147,7 @@
   left: 0;
   margin-left:120px;
   position: absolute;
-  top: 140px;
+  top: 160px;
   width: 400px;
 }
 
@@ -245,4 +246,10 @@
   position: absolute;
   top: 3px;
   white-space: nowrap;
+}
+.error-message-wrapper {
+  text-align: left; /* Align the error message to the left */
+  margin-top: -40px; /* Adjust the top margin to move it higher */
+  margin-left: -21px; /* Adjust the left margin to move it to the left */
+  color: red; /* Set the text color to red */
 }

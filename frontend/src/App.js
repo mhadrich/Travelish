@@ -19,7 +19,7 @@ function App() {
   const [data, setData] = useState([]);
   console.log(data,'data');
   const [trigger, setTrigger] = useState(false)
-  useEffect(() => { axios .get("http://localhost:3000/getAllBussinesss")
+  useEffect(() => { axios .get("http://localhost:5000/bussiness/getAllBussinesss")
       .then((resp) => {
       setData(resp.data);
       })

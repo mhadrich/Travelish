@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "../css/SignIn.css";
+import jwt_decode from 'jwt-decode';
 
 const SignIn = () => {
   const navigate = useNavigate();
@@ -9,24 +10,30 @@ const SignIn = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  // const handleSignIn = async () => {
-  //   try {
-  //     const response = await axios.get(`/getOneAdmin/${email}`);
-  //     const adminData = response.data;
 
-  //     if (adminData && adminData.password === password) {
-  //       // Successfully signed in
-  //       // You can perform any additional actions here
 
-  //       // For now, let's navigate to the home page
-  //       navigate("/");
-  //     } else {
-  //       setError("Invalid email or password");
-  //     }
-  //   } catch (error) {
-  //     setError("An error occurred while signing in");
-  //   }
-  // };
+  const handleSignIn = (e) => {
+    e.preventDefault();
+  
+    axios.post("http://localhost:5000/admin/login", { email, password })
+      .then((res) => {
+        const token = res.data.token;
+        localStorage.setItem("token",token)
+        console.log(res.data,"hhhhh");
+        if (res.data.role === 'admin') {
+          // If it's an admin, navigate to the admin dashboard
+          navigate("/AdminDashboard");
+        } else {
+          // If it's a regular user, navigate to the home page
+          navigate("/");
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+        setError("Invalid email or password");
+      });
+  };
+  
   return (
     <div className="sign4in">
       <div className="dive">
@@ -36,24 +43,26 @@ const SignIn = () => {
               <div className="headlinee">
                 <div className="text-wrappere">Welcome back</div>
               </div>
-              
-                <input className="text-wrappere-200" placeholder="Email" />
-              
+
+              <input className="text-wrappere-200" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+
               <div className="div-wrappere">
-                <input className="text-wrappere-2" placeholder="Password"/>
+                <input className="text-wrappere-2" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
               </div>
-              <div className="text-button">
-                <div className="text-wrappere-3" /*onClick={handleSignIn}*/>
+              <div className="text-button" onClick={handleSignIn}>
+                <div className="text-wrappere-3" >
                   Sign In
                 </div>
               </div>
-              {error && <div className="error-message">{error}</div>}
+              <div className="error-message-wrapper">
+                {error && <div className="error-message">{error}</div>}
+              </div>
               <div className="description-link">
                 <div className="div-wrapper-2">
                   <div className="text-wrappere-4">Don’t have an account?</div>
                 </div>
                 <div className="div-wrapper-2">
-                  <div className="text-wrappere-5">Sign up</div>
+                  <div className="text-wrappere-5" onClick={() => { navigate("/CreateAccount") }}>Sign up</div>
                 </div>
               </div>
             </div>
@@ -73,3 +82,5 @@ const SignIn = () => {
 
 
 export default SignIn
+
+

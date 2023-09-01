@@ -71,12 +71,12 @@ route.post("/login" ,  async (req, res) => {
 
       if (comparing) {
         const token = jwt.sign(
-          { id: exist.id, userName: exist.userName },
+          { id: exist.id, userName: exist.userName , role: exist.role},
           privateKey,
           { expiresIn: "9999999012005120h" }
         );
 
-        return res.status(200).json({ token }); 
+        return res.status(200).json({role: exist.role, token}); 
       } else {
         return res.status(401).json({ error: "Invalid email or password" });
       }
