@@ -60,6 +60,7 @@ import { useState,useEffect } from "react";
       console.log(Dashboard);
     })
   },[trigger])
+  
   const handleDelete= (id) => {
      axios.delete(`http://localhost:5000/bussiness/deleteOneBussiness/${id}`).then((resp)=>{
         setTrigger(!trigger)
@@ -79,7 +80,6 @@ import { useState,useEffect } from "react";
                 <div className="div-wrapper" style={{backgroundImage:`linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)),url(${el.images})`}}>
                   <img src="https://image.shutterstock.com/image-vector/close-icon-menu-vector-260nw-405303016.jpg" style={{width:"40px" , marginLeft:"190px" ,marginTop:"10px"}} onClick={()=>handleDelete(el.id)}></img>
                <div className="text-wrapper-9">{el.name}</div>
-               <br/>
              </div>
               )
             })}

@@ -12,6 +12,7 @@ import NewComment from './Components/NewComment'
 import SignIn from './Components/SignIn'
 import CreateAccount from './Components/CreateAccount'
 import UserDetailView from './Components/UserDetailView'
+import SplashScreen from './Components/SplashScreen';
 
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route path="/" element={<Home data={data} trigger={trigger} setTrigger={setTrigger}/>}  />
+          <Route path='/' element={<SplashScreen />}></Route>
+          <Route path="/Home" element={<Home data={data} trigger={trigger} setTrigger={setTrigger}/>}  />
           <Route path="/SearchResults" element={<SearchResults />} />
           <Route path="/AdminDetailView" element={<AdminDetailView/>} />
           <Route path="/AdminDashboard" element={<AdminDashboard />} />
