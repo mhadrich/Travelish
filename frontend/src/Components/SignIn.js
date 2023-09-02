@@ -8,7 +8,7 @@ const SignIn = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const [error, setError] = useState("hhhh");
 
 
 
@@ -25,7 +25,7 @@ const SignIn = () => {
           navigate("/AdminDashboard");
         } else {
           // If it's a regular user, navigate to the home page
-          navigate("/");
+          navigate("/Home");
         }
       })
       .catch((err) => {
@@ -49,7 +49,7 @@ const SignIn = () => {
               <div className="div-wrappere">
                 <input className="text-wrappere-2" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
               </div>
-              <div className="text-button" onClick={handleSignIn}>
+              <div className="button" onClick={handleSignIn}>
                 <div className="text-wrappere-3" >
                   Sign In
                 </div>
