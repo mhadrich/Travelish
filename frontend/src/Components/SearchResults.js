@@ -8,6 +8,7 @@ import StarIcon from "@mui/icons-material/Star";
 const SearchResults = (props) => {
   const { data, review, select } = props;
   const navigate = useNavigate();
+  console.error('====>',review);
   return (
     <div className="user-view">
       <div className="div">
@@ -23,6 +24,7 @@ const SearchResults = (props) => {
               }
             });
             stars = totalRate / totalRvw;
+            console.log(review.rating);
             return (
               <div
                 key={i}
@@ -46,7 +48,7 @@ const SearchResults = (props) => {
                   >
                     <Rating
                       name="hover-feedback"
-                      value={stars}
+                      value={3}
                       emptyIcon={
                         <StarIcon style={{ opacity: 0.2 }} fontSize="inherit" />
                       }

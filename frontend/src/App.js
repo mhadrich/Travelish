@@ -22,16 +22,17 @@ function App() {
   const [sorted,setSorted] =useState([]);
   const [selected, setSelected] = useState({});
   const [trigger, setTrigger] = useState(false);
+  console.log('🐶',sorted);
 
   // ! BUSINESS DATA
-  useEffect(() => { axios .get("http://localhost:4004/bussiness/getAllBussinesss")
+  useEffect(() => { axios.get("http://localhost:4004/bussiness/getAllBussinesss")
     .then((resp) => {
     setBusinessData(resp.data);
     })
     .catch((err) => console.log(err));
   }, [trigger]);
   // ! REVIEW DATA
-  useEffect(() => { axios .get("http://localhost:4004/review/getAllReviews")
+  useEffect(() => { axios.get("http://localhost:4004/review/getAllReviews")
     .then((resp) => {
     setReviewData(resp.data);
     })

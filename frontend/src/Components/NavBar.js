@@ -1,13 +1,13 @@
-import React, { useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 import "../css/NavBar.css";
 
 
 export const NavBar = (props) => {
   const { data, sorted } = props;
+  const [sort,setSort] =useState('');
+  console.log(sort);
   const navigate = useNavigate();
-  const [sortedData, setSortedData] = useState({});
-  console.error('data in navbar',sortedData);
   const location = useLocation(); //! Get the current location
   //! Determine whether to show the full NavBar or just the logo
   const showFullNavBar =
@@ -15,18 +15,18 @@ export const NavBar = (props) => {
     location.pathname !== "/CreateAccount" &&
     location.pathname !== "/";
     
-  
-  const handleSort = (sort) =>{
-    if(sort==='restaurants'){
-      setSortedData(data.filter((e)=>e.category.includes(sort)))
-    } else if(sort==='hotels'){
-      setSortedData(data.filter((e)=>e.category.includes(sort)))
-    } else if(sort==='bars'){
-      setSortedData(data.filter((e)=>e.category.includes(sort)))
-    } else if(sort==='activities'){
-      setSortedData(data.filter((e)=>e.category.includes(sort)))
+  useEffect(()=>{
+    if(sort==='restaurant'){
+      sorted(data.filter((e)=>e.category.includes(sort)))
+    } else if(sort==='hotel'){
+      sorted(data.filter((e)=>e.category.includes(sort)))
+    } else if(sort==='bar'){
+      sorted(data.filter((e)=>e.category.includes(sort)))
+    } else if(sort==='activity'){
+      sorted(data.filter((e)=>e.category.includes(sort)))
     }
-  }
+  },[sort])
+  
   return (
     <div className="group">
       <div className="logo" onClick={() => navigate("/Home")}>
@@ -112,36 +112,18 @@ export const NavBar = (props) => {
       </div>
       {showFullNavBar && (
         <div className="div">
-          <div
-            className="text-wrapper-2"
-            onClick={() =>{
-              navigate("/SearchResults");
-              handleSort('restaurants');
-            }}
-          >
-            Restaurants
-          </div>
-          <div className="text-wrapper-3" onClick={() =>{
-            navigate("/SearchResults");
-            handleSort('hotels');
-          }}>
-            Hotels
-          </div>
-          <div className="text-wrapper-4" onClick={() =>{
-            navigate("/SearchResults");
-            handleSort('bars');
-          }}>
-            Bars
-          </div>
-          <div
-            className="text-wrapper-5"
-            onClick={() =>{
-              navigate("/SearchResults");
-              handleSort('activities');
-            }}
-          >
-            Activities
-          </div>
+          <Link to="/SearchResults" onClick={() => setSort('restaurant')}>
+            <div className="text-wrapper-2">Restaurants</div>
+          </Link>
+          <Link to="/SearchResults" onClick={() => setSort('hotel')}>
+            <div className="text-wrapper-3">Hotels</div>
+          </Link>
+          <Link to="/SearchResults" onClick={() => setSort('bar')}>
+            <div className="text-wrapper-4">Bars</div>
+          </Link>
+          <Link to="/SearchResults" onClick={() => setSort('activity')}>
+            <div className="text-wrapper-5">Activities</div>
+          </Link>
         </div>
       )}
       {showFullNavBar && (
