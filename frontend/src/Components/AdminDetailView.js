@@ -15,7 +15,7 @@ const AdminDetailView = (props) => {
   const [hour, setHour] = useState("")
   const [phones, setPhones] = useState("")
 
-  const [value, setValue] = React.useState(5);
+  // const [value, setValue] = React.useState(0);
 
 
   // useEffect(()=>{
@@ -73,22 +73,18 @@ const AdminDetailView = (props) => {
       <div className="div">
         <div className="text-wrapper-7">Steak House</div>
         <div className="group-2">
-          <div className="text-wrapper-8">70 reviews</div>
+          {/* <div className="text-wrapper-8">70 reviews</div> */}
           <Box
               sx={{
                 width: 200,
                 display: 'flex',
-                alignItems: 'center',
-              
-              }}
-              
+                alignItems: 'center',           
+              }}           
             >
-
               <Rating
                 name="hover-feedback"
                 value={3}
                 emptyIcon={<StarIcon style={{ opacity: 0.2 }} fontSize="inherit" />}
-              
                 style={{pointerEvents:"none"}}
               />
             </Box>
@@ -106,12 +102,21 @@ const AdminDetailView = (props) => {
           </p>
           <div className="text-wrapper-9">Rating &amp; Reviews</div>
           <div className="group-3">
-            <div className="text-wrapper-8">70 reviews</div>
-            <img className="star" alt="Star" src="image.svg" />
-            <img className="star-2" alt="Star" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Star_full.svg/1005px-Star_full.svg.png" />
-            <img className="star-3" alt="Star" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Star_full.svg/1005px-Star_full.svg.png" />
-            <img className="star-4" alt="Star" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Star_full.svg/1005px-Star_full.svg.png" />
-            <img className="star-5" alt="Star" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Star_full.svg/1005px-Star_full.svg.png" />
+            {/* <div className="text-wrapper-8">70 reviews</div> */}
+            <Box
+              sx={{
+                width: 150,
+                display: 'flex',
+                alignItems: 'center',           
+              }}           
+            >
+              <Rating
+                name="hover-feedback"
+                value={5}
+                emptyIcon={<StarIcon style={{ opacity: 0.2 }} fontSize="inherit" />}
+                style={{pointerEvents:"none"}}
+              />
+            </Box>
           </div>
           <img className="vector" alt="Vector" src="vector-8.svg" />
           {/* <div className="div-wrapper">
@@ -143,7 +148,7 @@ const AdminDetailView = (props) => {
 
           </div >
           <div style={mystyle}>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12765.591839929415!2d10.1885956!3d36.8808269!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2cbe05eaab2f3%3A0x13cff2c443049ee1!2sSalle%20de%20sport%20Gold%20gym%20Ennkhilet%20El%20Ghazela!5e0!3m2!1sfr!2stn!4v1693318657076!5m2!1sfr!2stn" ></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51757.48343061744!2d10.6180544!3d35.82833455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130275759ac9d10d%3A0x698e3915682cef7d!2sSousse!5e0!3m2!1sfr!2stn!4v1693647167528!5m2!1sfr!2stn" ></iframe>
           </div>
           <div />
           {contactForm ? (
