@@ -19,7 +19,7 @@ function App() {
   const [data, setData] = useState([]);
   console.log(data,'data');
   const [trigger, setTrigger] = useState(false)
-  useEffect(() => { axios .get("http://localhost:5000/bussiness/getAllBussinesss")
+  useEffect(() => { axios .get("http://localhost:4004/bussiness/getAllBussinesss")
       .then((resp) => {
       setData(resp.data);
       })
@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <NavBar />
+        <NavBar data={data}/>
         <Routes>
           <Route path='/' element={<SplashScreen />}></Route>
           <Route path="/Home" element={<Home data={data} trigger={trigger} setTrigger={setTrigger}/>}  />
