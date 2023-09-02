@@ -10,9 +10,9 @@ const CreateAccount = () => {
     userName : '',
     password : '',
     email : '',
-    role : 1
+    role : "1"
   })
-console.log(isChecked);
+console.log(newUser);
   
 
   const handleChange = (input) =>{
@@ -26,34 +26,29 @@ console.log(isChecked);
   }
 
   const handleCheckboxChange = () => {
-    
-    
     if(isChecked){
-      
       setNewUser((prevData)=>(
         {
           ...prevData,
-          role : 1
+          role : "1"
         }
       ))
     } else {
-      
       setNewUser((prevData)=>(
         {
           ...prevData,
-          role : 0
+          role : "0"
         }
       ))
     }
     setIsChecked(!isChecked);
-
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
     axios.post('http://localhost:4004/admin/register',newUser)
     .then((response)=>{
-      navigate('/');
+      navigate('/Home');
       window.location.reload(false);
       console.log('Successful add',response.data);
     })

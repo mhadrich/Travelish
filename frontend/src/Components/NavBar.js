@@ -4,10 +4,10 @@ import "../css/NavBar.css";
 
 
 export const NavBar = (props) => {
-  const { data } = props;
+  const { data, sorted } = props;
   const navigate = useNavigate();
-  // const [sort,setSort] = useState('');
   const [sortedData, setSortedData] = useState({});
+  console.error('data in navbar',sortedData);
   const location = useLocation(); //! Get the current location
   //! Determine whether to show the full NavBar or just the logo
   const showFullNavBar =
@@ -15,6 +15,7 @@ export const NavBar = (props) => {
     location.pathname !== "/CreateAccount" &&
     location.pathname !== "/";
     
+  
   const handleSort = (sort) =>{
     if(sort==='restaurants'){
       setSortedData(data.filter((e)=>e.category.includes(sort)))

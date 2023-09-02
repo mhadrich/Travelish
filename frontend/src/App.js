@@ -16,30 +16,44 @@ import SplashScreen from './Components/SplashScreen';
 
 
 function App() {
-  const [data, setData] = useState([]);
-  console.log(data,'data');
-  const [trigger, setTrigger] = useState(false)
+
+  const [businessData, setBusinessData] = useState([]);
+  const [reviewData, setReviewData] = useState([]);
+  const [sorted,setSorted] =useState([]);
+  const [selected, setSelected] = useState({});
+  const [trigger, setTrigger] = useState(false);
+
+  // ! BUSINESS DATA
   useEffect(() => { axios .get("http://localhost:4004/bussiness/getAllBussinesss")
-      .then((resp) => {
-      setData(resp.data);
-      })
-      .catch((err) => console.log(err));
+    .then((resp) => {
+    setBusinessData(resp.data);
+    })
+    .catch((err) => console.log(err));
   }, [trigger]);
+  // ! REVIEW DATA
+  useEffect(() => { axios .get("http://localhost:4004/review/getAllReviews")
+    .then((resp) => {
+    setReviewData(resp.data);
+    })
+    .catch((err) => console.log(err));
+  }, [trigger]);
+  
+  
   return (
     <div className="App">
       <Router>
-        <NavBar data={data}/>
+        <NavBar data={businessData} sorted={setSorted}/>
         <Routes>
           <Route path='/' element={<SplashScreen />}></Route>
-          <Route path="/Home" element={<Home data={data} trigger={trigger} setTrigger={setTrigger}/>}  />
-          <Route path="/SearchResults" element={<SearchResults />} />
+          <Route path="/Home" element={<Home data={businessData} trigger={trigger} setTrigger={setTrigger}/>}  />
+          <Route path="/SearchResults" element={<SearchResults data={sorted} review={reviewData} select={setSelected}/>} />
           <Route path="/AdminDetailView" element={<AdminDetailView/>} />
           <Route path="/AdminDashboard" element={<AdminDashboard />} />
           <Route path="/AddingBusiness" element={<AddingBusiness />} />
           <Route path="/NewComment" element={<NewComment/>} />
           <Route path="/SignIn" element={<SignIn/>} />
           <Route path="/CreateAccount" element={<CreateAccount/>} />
-          <Route path="/UserDetailView" element={<UserDetailView/>} />
+          <Route path="/UserDetailView`" element={<UserDetailView data={selected}/>} />
         </Routes>
       </Router>
     </div>
