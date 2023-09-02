@@ -3,44 +3,48 @@ import React from "react";
 import "../css/UserDetailView.css";
 
 import { useNavigate } from 'react-router-dom';
+import Rating from '@mui/material/Rating';
+import Box from '@mui/material/Box';
+import StarIcon from '@mui/icons-material/Star';
 
 
 const UserDetailView = () => {
   const navigate = useNavigate();
 
+// const [value, setValue] = React.useState(0);
+
+const mystyle1 = {
+  // width: "2",
+  // height: "2",
+  marginLeft: '-30px',
+  style: "border:0;",
+  allowfullscreen: "",
+  loading: "lazy",
+  referrerpolicy: "no-referrer-when-downgrade"
+}
+
   return (
     <div className="user-business-view">
       <div className="div">
         <div className="group">
-          {/* <div className="logo">
-            <img className="img" alt="Group" src="group-2.png" />
-            <div className="text-wrapper">Travelish</div>
-          </div> */}
-          {/* <div className="navbar">
-            <div className="text-wrapper-2">Restaurants</div>
-            <div className="text-wrapper-3">Hotels</div>
-            <div className="text-wrapper-4">Bars</div>
-            <div className="text-wrapper-5">Activities</div>
-          </div> */}
-          {/* <div className="sign-in">
-            <div className="overlap">
-              <div className="text-wrapper-6">username</div>
-              <div className="overlap-group-wrapper">
-                <div className="overlap-group">
-                  <div className="text-wrapper-7">Sign in</div>
-                </div>
-              </div>
-            </div>
-          </div> */}
+
         </div>
         <div className="text-wrapper-8">Steak House</div>
         <div className="group-2">
-          <div className="text-wrapper-9">70 reviews</div>
-          <img className="star" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
-          <img className="star-2" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
-          <img className="star-3" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
-          <img className="star-4" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
-          <img className="star-5" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
+        <Box
+              sx={{
+                width: 200,
+                display: 'flex',
+                alignItems: 'center',           
+              }}           
+            >
+              <Rating
+                name="hover-feedback"
+                value={4}
+                emptyIcon={<StarIcon style={{ opacity: 0.2 }} fontSize="inherit" />}
+                style={{pointerEvents:"none"}}
+              />
+            </Box>
         </div>
         <img className="rectangle" alt="Rectangle" src="https://soussemade.com/wp-content/uploads/2023/06/beach-bar-sousse-3.jpg" />
         <div className="overlap-2">
@@ -53,12 +57,20 @@ const UserDetailView = () => {
           </p>
           <div className="text-wrapper-10">Rating &amp; Reviews </div>
           <div className="group-3">
-            <div className="text-wrapper-9">70 reviews</div>
-            <img className="star" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
-            <img className="star-2" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
-            <img className="star-3" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
-            <img className="star-4" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
-            <img className="star-5" alt="Star" src="https://pixlok.com/wp-content/uploads/2021/07/Rating-SVG-Icon-s9fd.png" />
+          <Box
+              sx={{
+                width: 200,
+                display: 'flex',
+                alignItems: 'center',           
+              }}           
+            >
+              <Rating
+                name="hover-feedback"
+                value={2}
+                emptyIcon={<StarIcon style={{ opacity: 0.2 }} fontSize="inherit" />}
+                style={{pointerEvents:"none"}}
+              />
+            </Box>
           </div>
           <img className="vector" alt="Vector" src="vector-8.svg" />
           <div className="div-wrapper" onClick={() => { navigate("/NewComment") }} >
@@ -86,8 +98,9 @@ const UserDetailView = () => {
         </div>
         <div className="overlap-4">
           <div className="text-wrapper-10">Location &amp; contact</div>
-          <img className="mask-group" alt="Mask group" src="mask-group.png" />
-          <div className="group-4">
+          <div style={mystyle1}>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51757.48343061744!2d10.6180544!3d35.82833455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x130275759ac9d10d%3A0x698e3915682cef7d!2sSousse!5e0!3m2!1sfr!2stn!4v1693647167528!5m2!1sfr!2stn" ></iframe>
+          </div>          <div className="group-4">
             <div className="text-wrapper-12">16:00 - 03:00</div>
             <img className="image" alt="Image" src="https://cdn-icons-png.flaticon.com/512/2088/2088617.png" />
           </div>
