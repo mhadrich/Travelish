@@ -4,22 +4,23 @@ import axios from "axios";
 import "../css/SignIn.css";
 import jwt_decode from 'jwt-decode';
 
-const SignIn = () => {
+const SignIn = (props) => {
+  const { connected } = props;
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("hhhh");
-
+  
 
 
   const handleSignIn = (e) => {
     e.preventDefault();
   
-    axios.post("http://localhost:5000/admin/login", { email, password })
+    axios.post("http://localhost:4004/admin/login", { email, password })
       .then((res) => {
         const token = res.data.token;
         localStorage.setItem("token",token)
-        console.log(res.data,"hhhhh");
+        connected(res.data.userName);
         if (res.data.role === 'admin') {
           // If it's an admin, navigate to the admin dashboard
           navigate("/AdminDashboard");

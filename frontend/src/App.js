@@ -22,6 +22,7 @@ function App() {
   const [sorted,setSorted] =useState([]);
   const [selected, setSelected] = useState({});
   const [trigger, setTrigger] = useState(false);
+  const [user,setUser] = useState('');
 
   // ! BUSINESS DATA
   useEffect(() => { axios.get("http://localhost:4004/bussiness/getAllBussinesss")
@@ -42,7 +43,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <NavBar data={businessData} sorted={setSorted}/>
+        <NavBar data={businessData} sorted={setSorted} connected={user}/>
         <Routes>
           <Route path='/' element={<SplashScreen />}></Route>
           <Route path="/Home" element={<Home data={businessData} trigger={trigger} setTrigger={setTrigger}/>}  />
@@ -51,7 +52,7 @@ function App() {
           <Route path="/AdminDashboard" element={<AdminDashboard />} />
           <Route path="/AddingBusiness" element={<AddingBusiness />} />
           <Route path="/NewComment" element={<NewComment/>} />
-          <Route path="/SignIn" element={<SignIn/>} />
+          <Route path="/SignIn" element={<SignIn connected={setUser}/>} />
           <Route path="/CreateAccount" element={<CreateAccount/>} />
           <Route path="/UserDetailView`" element={<UserDetailView data={selected}/>} />
         </Routes>

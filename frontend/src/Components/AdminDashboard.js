@@ -55,14 +55,14 @@ import { useState,useEffect } from "react";
   const [Dashboard,setDashbord] = useState([])
   const [trigger ,setTrigger]=useState(false)
   useEffect(()=>{
-    axios.get("http://localhost:5000/bussiness/getAllBussinesss").then((res)=>{
+    axios.get("http://localhost:4004/bussiness/getAllBussinesss").then((res)=>{
       setDashbord(res.data)
       console.log(Dashboard);
     })
   },[trigger])
   
   const handleDelete= (id) => {
-     axios.delete(`http://localhost:5000/bussiness/deleteOneBussiness/${id}`).then((resp)=>{
+     axios.delete(`http://localhost:4004/bussiness/deleteOneBussiness/${id}`).then((resp)=>{
         setTrigger(!trigger)
        }).catch((err)=>{console.log(err)})
       }

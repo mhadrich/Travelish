@@ -76,7 +76,7 @@ route.post("/login" ,  async (req, res) => {
           { expiresIn: "9999999012005120h" }
         );
 
-        return res.status(200).json({role: exist.role, token}); 
+        return res.status(200).json({userName: exist.userName, role: exist.role, token}); 
       } else {
         return res.status(401).json({ error: "Invalid email or password" });
       }

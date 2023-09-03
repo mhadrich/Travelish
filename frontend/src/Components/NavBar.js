@@ -4,7 +4,7 @@ import "../css/NavBar.css";
 
 
 export const NavBar = (props) => {
-  const { data, sorted } = props;
+  const { data, sorted, connected } = props;
   const [sort,setSort] =useState('');
   console.log(sort);
   const navigate = useNavigate();
@@ -133,7 +133,7 @@ export const NavBar = (props) => {
               className="text-wrapper-6"
               onClick={() => navigate("/CreateAccount")}
             >
-              Sign up
+              {connected || 'Sign Up'}
             </div>
           </div>
         </div>

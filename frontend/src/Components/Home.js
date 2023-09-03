@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 import { useNavigate, useLocation } from "react-router-dom";
 import SearchResults from "./SearchResults";
 import "../css/Home.css";
-import 'swiper/css'
+import 'swiper/css';
 const Home = ({ data, trigger, setTrigger }) => {
 
 console.log(data,"daaaa")
