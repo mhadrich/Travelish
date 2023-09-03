@@ -6,7 +6,6 @@ import "../css/NavBar.css";
 export const NavBar = (props) => {
   const { data, sorted, connected } = props;
   const [sort,setSort] =useState('');
-  console.log(sort);
   const navigate = useNavigate();
   const location = useLocation(); //! Get the current location
   //! Determine whether to show the full NavBar or just the logo
@@ -17,13 +16,13 @@ export const NavBar = (props) => {
     
   useEffect(()=>{
     if(sort==='restaurant'){
-      sorted(data.filter((e)=>e.category.includes(sort)))
+      sorted(data.filter((e)=>e.category===sort))
     } else if(sort==='hotel'){
-      sorted(data.filter((e)=>e.category.includes(sort)))
+      sorted(data.filter((e)=>e.category===sort))
     } else if(sort==='bar'){
-      sorted(data.filter((e)=>e.category.includes(sort)))
+      sorted(data.filter((e)=>e.category===sort))
     } else if(sort==='activity'){
-      sorted(data.filter((e)=>e.category.includes(sort)))
+      sorted(data.filter((e)=>e.category===sort))
     }
   },[sort])
   

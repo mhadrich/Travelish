@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "10697",
+    "password": "R@ndom01",
     "database": "travelish",
     "host": "127.0.0.1",
     "dialect": "mysql"

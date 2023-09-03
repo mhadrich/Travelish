@@ -563,3 +563,12 @@
   top: 0;
   width: 272px;
 }
+
+.user-business-view .adress {
+  height: 18px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 16px;
+  width: 18px;
+}

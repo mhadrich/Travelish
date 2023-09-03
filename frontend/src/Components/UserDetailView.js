@@ -102,7 +102,7 @@ const mystyle1 = {
           </div>
           <div className="group-6">
             <p className="p">{data.adresse}</p>
-            <img className="image" alt="Image" src="https://w7.pngwing.com/pngs/561/324/png-transparent-location-address-position-linear-icon-location-address-position-thumbnail.png" />
+            <img className="adress" alt="Image" src="https://w7.pngwing.com/pngs/561/324/png-transparent-location-address-position-linear-icon-location-address-position-thumbnail.png" />
           </div>
         </div>
         <div className="text-wrapper-14">Similar to this place</div>

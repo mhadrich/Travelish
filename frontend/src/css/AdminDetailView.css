@@ -387,6 +387,30 @@
   width: 126px;
 }
 
+.business-owner .group-4 .inputCss{
+  background-color: transparent;
+  border-radius: 5px;
+  left: 10px;
+  margin-left: 12px
+}
+.business-owner .group-5 .inputCss{
+  background-color: transparent;
+  border-radius: 5px;
+  margin-left: 17px;
+  margin-top:4px
+
+}
+
+
+.business-owner .group-6 .inputCss{
+  background-color: transparent;
+  border-radius: 5px;
+}
+.business-owner .group-5 .text-wrapper-13 {
+  margin-top: 8px;
+}
+
+
 .business-owner .text-wrapper-12 {
   color: #000000;
   font-family: "Sansation-Regular", Helvetica;
@@ -405,7 +429,7 @@
   left: 0;
   object-fit: cover;
   position: absolute;
-  top: 0;
+  top: 50;
   width: 18px;
 }
 

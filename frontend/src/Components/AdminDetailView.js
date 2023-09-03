@@ -155,13 +155,13 @@ const AdminDetailView = (props) => {
           {contactForm ? (
             <div>
               <div className="group-4">
-                <input defaultValue={data.hours} onChange={(e) => setHour(e.target.value)} />
+                <input className= "inputCss" defaultValue={data.hours} onChange={(e) => setHour(e.target.value)} />
               </div>
               <div className="group-5">
-                <input defaultValue={data.phone} onChange={(e) => setPhone(e.target.value)} />
+                <input className= "inputCss" defaultValue={data.phone} onChange={(e) => setPhone(e.target.value)} />
               </div>
               <div className="group-6">
-                <input defaultValue={data.adresse} onChange={(e) => setAdress(e.target.value)} />
+                <input className= "inputCss" defaultValue={data.adresse} onChange={(e) => setAdress(e.target.value)} />
               </div>
             </div>
           )
