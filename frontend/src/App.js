@@ -22,7 +22,6 @@ function App() {
   const [sorted,setSorted] =useState([]);
   const [selected, setSelected] = useState({});
   const [trigger, setTrigger] = useState(false);
-  console.log('🐶',sorted);
 
   // ! BUSINESS DATA
   useEffect(() => { axios.get("http://localhost:4004/bussiness/getAllBussinesss")

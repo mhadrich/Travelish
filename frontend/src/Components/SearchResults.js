@@ -8,7 +8,7 @@ import StarIcon from "@mui/icons-material/Star";
 const SearchResults = (props) => {
   const { data, review, select } = props;
   const navigate = useNavigate();
-  console.error('====>',review);
+
   return (
     <div className="user-view">
       <div className="div">
@@ -17,14 +17,13 @@ const SearchResults = (props) => {
             var stars = 0;
             var totalRvw = 0;
             var totalRate = 0;
-            review.map((e) => {
-              if (review.bussinessID === e.id) {
+            review.map((r) => {
+              if (r.bussinessID === e.id) {
                 totalRvw += 1;
-                totalRate += review.rating;
+                totalRate += r.rating;
               }
             });
             stars = totalRate / totalRvw;
-            console.log(review.rating);
             return (
               <div
                 key={i}
@@ -48,9 +47,9 @@ const SearchResults = (props) => {
                   >
                     <Rating
                       name="hover-feedback"
-                      value={3}
+                      value={stars}
                       emptyIcon={
-                        <StarIcon style={{ opacity: 0.2 }} fontSize="inherit" />
+                        <StarIcon style={{ opacity: 0.2 }} />
                       }
                       style={{ pointerEvents: "none" }}
                     />
