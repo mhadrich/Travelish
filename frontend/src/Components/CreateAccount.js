@@ -48,7 +48,7 @@ console.log(newUser);
     event.preventDefault();
     axios.post('http://localhost:4004/admin/register',newUser)
     .then((response)=>{
-      navigate('/Home');
+      navigate('/SignIn');
       window.location.reload(false);
       console.log('Successful add',response.data);
     })

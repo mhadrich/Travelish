@@ -23,6 +23,8 @@ function App() {
   const [selected, setSelected] = useState({});
   const [trigger, setTrigger] = useState(false);
   const [user,setUser] = useState('');
+  const [stars, setStars] = useState(0);
+
 
   // ! BUSINESS DATA
   useEffect(() => { axios.get("http://localhost:4004/bussiness/getAllBussinesss")
@@ -47,14 +49,14 @@ function App() {
         <Routes>
           <Route path='/' element={<SplashScreen />}></Route>
           <Route path="/Home" element={<Home data={businessData} trigger={trigger} setTrigger={setTrigger}/>}  />
-          <Route path="/SearchResults" element={<SearchResults data={sorted} review={reviewData} select={setSelected}/>} />
-          <Route path="/AdminDetailView" element={<AdminDetailView/>} />
+          <Route path="/SearchResults" element={<SearchResults data={sorted} review={reviewData} select={setSelected} rate={setStars}/>} />
+          <Route path="/AdminDetailView" element={<AdminDetailView data={selected} stars={stars} review={reviewData}/>} />
           <Route path="/AdminDashboard" element={<AdminDashboard />} />
           <Route path="/AddingBusiness" element={<AddingBusiness />} />
-          <Route path="/NewComment" element={<NewComment/>} />
+          <Route path="/NewComment" element={<NewComment data={selected}/>} />
           <Route path="/SignIn" element={<SignIn connected={setUser}/>} />
           <Route path="/CreateAccount" element={<CreateAccount/>} />
-          <Route path="/UserDetailView`" element={<UserDetailView data={selected}/>} />
+          <Route path="/UserDetailView" element={<UserDetailView data={selected} stars={stars} review={reviewData}/>} />
         </Routes>
       </Router>
     </div>

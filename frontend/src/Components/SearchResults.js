@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import StarIcon from "@mui/icons-material/Star";
 
 const SearchResults = (props) => {
-  const { data, review, select } = props;
+  const { data, review, select, rate } = props;
   const navigate = useNavigate();
 
   return (
@@ -30,6 +30,7 @@ const SearchResults = (props) => {
                 className={`result${i}`}
                 onClick={() => {
                   select(e);
+                  rate(stars);
                   navigate("/UserDetailView");
                 }}
                 style={{

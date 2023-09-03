@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css/AdminDetailView.css";
-// import axios from "axios";
+import axios from "axios";
 import { useState } from 'react';
 // import { useNavigate } from 'react-router-dom';
 import Rating from '@mui/material/Rating';
@@ -8,38 +8,38 @@ import Box from '@mui/material/Box';
 import StarIcon from '@mui/icons-material/Star';
 
 const AdminDetailView = (props) => {
-  // const obj=props.data
+  const {data, stars, review} = props
 
   const [adress, setAdress] = useState("")
-  const [descriptions, setDescriptions] = useState("")
+  const [description, setDescription] = useState("")
   const [hour, setHour] = useState("")
-  const [phones, setPhones] = useState("")
+  const [phone, setPhone] = useState("")
 
   // const [value, setValue] = React.useState(0);
 
 
-  // useEffect(()=>{
-  //   setAdress(adresse)
-  //   setDescriptions(description)
-  //   setHour(hours)
-  //   setPhones(phone)
-  //   },[])
+  useEffect(()=>{
+    setAdress(adress)
+    setDescription(description)
+    setHour(hour)
+    setPhone(phone)
+    },[])
 
-  // const handleClick = () => {
-  // axios.put(`/////////////${}`, {
-  // name:obj.name
-  // category:obj.category
-  // images:obj.images
-  // adresse: adress,
-  // description: descriptions,
-  // hours: hour,
-  // phone: phones,
-  // zone:obj.zone
-  // adminID:obj.adminID
-  //     }).then((response) => {
-  //       console.log(response)
-  //     }).catch(err => console.log(err))
-  //   }
+  const handleClick = () => {
+  axios.put(`http://localhost:4004/bussiness/updateOneBussiness/${data.id}`, {
+  name:data.name,
+  category:data.category,
+  images:data.images,
+  adresse: adress,
+  description: description,
+  hours: hour,
+  phone: phone,
+  zone:data.zone,
+  adminID:data.adminID
+      }).then((response) => {
+        console.log(response)
+      }).catch(err => console.log(err))
+    }
 
 
   const [contactForm, setContactForm] = useState(false)
@@ -71,7 +71,7 @@ const AdminDetailView = (props) => {
   return (
     <div className="business-owner">
       <div className="div">
-        <div className="text-wrapper-7">Steak House</div>
+        <div className="text-wrapper-7">{data.name}</div>
         <div className="group-2">
           {/* <div className="text-wrapper-8">70 reviews</div> */}
           <Box
@@ -83,7 +83,7 @@ const AdminDetailView = (props) => {
             >
               <Rating
                 name="hover-feedback"
-                value={3}
+                value={stars}
                 emptyIcon={<StarIcon style={{ opacity: 0.2 }} fontSize="inherit" />}
                 style={{pointerEvents:"none"}}
               />
@@ -91,15 +91,16 @@ const AdminDetailView = (props) => {
 
 
         </div>
-        <img className="rectangle" alt="Rectangle" src="https://images.squarespace-cdn.com/content/v1/568d96e0d8af10935f798e4c/1547577857359-0DGQ011R3OEY6HJZTVYC/steak-house-316-2.jpg?format=1500w" />
+        <img className="rectangle" alt="Rectangle" src={data.images} />
         <div className="overlap">
-          <p className="there-aren-t-enough">
-            There aren’t enough food, service, value or
-            <br />
-            atmosphere ratings for Steak House yet.
-            <br />
-            Be one of the first to write a review!
-          </p>
+        {review && review.map((e,i)=>{
+            if(e.bussinessID===data.id){
+              console.log(e.comments);
+              return (
+                  <p className={`comment${i}`}>{e.comments}</p>
+              )
+            }
+          })}
           <div className="text-wrapper-9">Rating &amp; Reviews</div>
           <div className="group-3">
             {/* <div className="text-wrapper-8">70 reviews</div> */}
@@ -112,7 +113,7 @@ const AdminDetailView = (props) => {
             >
               <Rating
                 name="hover-feedback"
-                value={5}
+                value={stars}
                 emptyIcon={<StarIcon style={{ opacity: 0.2 }} fontSize="inherit" />}
                 style={{pointerEvents:"none"}}
               />
@@ -128,10 +129,10 @@ const AdminDetailView = (props) => {
           <div className="overlap-wrapper">
             <div>
               {showForm ? (
-                <textarea id="story" name="story" rows="5" cols="33" onChange={(e) => setDescriptions(e.target.value)}>
-                  default value description </textarea>
+                <textarea id="story" name="story" rows="5" cols="33" onChange={(e) => setDescription(e.target.value)}>
+                  {data.description}</textarea>
               ) : (
-                <p id="description"> Réservations, Terrasse, Places assises, Télévision, Sert de l'alcool, Bar complet, Service de table, Concerts.</p>
+                <p id="description">{data.description}</p>
               )}
             </div>
 
@@ -154,28 +155,28 @@ const AdminDetailView = (props) => {
           {contactForm ? (
             <div>
               <div className="group-4">
-                <input defaultValue={"horaires"} onChange={(e) => setHour(e.target.value)} />
+                <input defaultValue={data.hours} onChange={(e) => setHour(e.target.value)} />
               </div>
               <div className="group-5">
-                <input defaultValue={"phone"} onChange={(e) => setPhones(e.target.value)} />
+                <input defaultValue={data.phone} onChange={(e) => setPhone(e.target.value)} />
               </div>
               <div className="group-6">
-                <input defaultValue={"adress"} onChange={(e) => setAdress(e.target.value)} />
+                <input defaultValue={data.adresse} onChange={(e) => setAdress(e.target.value)} />
               </div>
             </div>
           )
             : (
               <div>
                 <div className="group-4">
-                  <div className="text-wrapper-12">16:00 - 03:00</div>
+                  <div className="text-wrapper-12">{data.hours}</div>
                   {/* <img className="image" alt="Image" src="image-5.png" /> */}
                 </div>
                 <div className="group-5">
-                  <div className="text-wrapper-13">55555555</div>
+                  <div className="text-wrapper-13">{data.phone}</div>
                   {/* <img className="mask-group-2" alt="Mask group" src="image.png" /> */}
                 </div>
                 <div className="group-6">
-                  <p className="p">14 Rue de Liberté, Tunis</p>
+                  <p className="p">{data.adresse}</p>
                   {/* <img className="image" alt="Image" src="image-7.png" /> */}
                 </div>
               </div>

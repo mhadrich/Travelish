@@ -1,48 +1,58 @@
 import React from "react";
 import "../css/NewComment.css";
-import { useState } from 'react';
+import { useState } from "react";
 import axios from "axios";
-import Rating from '@mui/material/Rating';
-import Box from '@mui/material/Box';
-import StarIcon from '@mui/icons-material/Star';
+import Rating from "@mui/material/Rating";
+import Box from "@mui/material/Box";
+import StarIcon from "@mui/icons-material/Star";
+import { useNavigate } from "react-router-dom";
 
 const labels = {
-  0: '',
-  1: 'Useless',
-  2: 'Poor',
-  3: 'Ok',
-  4: 'Good',
-  5: 'Excellent',
+  0: "",
+  1: "Useless",
+  2: "Poor",
+  3: "Ok",
+  4: "Good",
+  5: "Excellent",
 };
 function getLabelText(value) {
-  return `${value} Star${value !== 1 ? 's' : ''}, ${labels[value]}`;
+  return `${value} Star${value !== 1 ? "s" : ""}, ${labels[value]}`;
 }
 
-
-
 const NewComment = (props) => {
-
-
-const obj = props.data
-
-
+  const { data } = props;
+  const navigate = useNavigate();
   const [value, setValue] = React.useState(0);
   const [hover, setHover] = React.useState(-1);
-
-
-
-  const [rate, setRate] = useState(0)
-  const [review, setReview] = useState('')
-
+  const [rate, setRate] = useState(0);
+  const [review, setReview] = useState("");
+  // const [newReview, setNewReview] = useState({
+  //   comments : '',
+  //   rating : '',
+  //   adminID : 1,
+  //   bussinessID : data.id
+  // })
+  console.log(rate, review);
 
   const handleChange = (e) => {
-    setReview(e.target.value)
-    setRate(value)
-  }
-  const handleClick = () => {
-    axios.post("//////", { rating: rate, comments: review, adminID: obj.adminID , bussinessID: obj.bussinessID }).then((result) => console.log(result)).catch(err => console.log(err))
-  }
+    setReview(e.target.value);
+    setRate(value);
+  };
 
+  const handleClick = (event) => {
+    event.preventDefault();
+    axios.post("http://localhost:4004/review/createReview", {
+      comments : review,
+      rating : rate,
+      adminID : 1,
+      bussinessID : data.id})
+      .then((response) => {
+        navigate("/Home");
+        window.location.reload(false);
+        console.log("Successful add", response.data);
+      })
+      .catch((error) => console.log("Failed to add", error));
+  };
 
   return (
     <div className="add-comment">
@@ -55,9 +65,13 @@ const obj = props.data
           </p>
           <div className="selected-business">
             <div className="overlap-group">
-              <img className="rectangle" alt="Rectangle" src="https://www.hawksmoornyc.com/wp-content/uploads/Prime-rib-with-sides-2--1024x683.jpg" />
-              <div className="text-wrapper">Steak House</div>
-              <p className="p">14 Rue de Liberté, Tunis</p>
+              <img
+                className="rectangle"
+                alt="Rectangle"
+                src={data.images}
+              />
+              <div className="text-wrapper">{data.name}</div>
+              <p className="p">{data.adresse}</p>
             </div>
           </div>
           <img className="separator" alt="Separator" src="separator.svg" />
@@ -67,8 +81,8 @@ const obj = props.data
             <Box
               sx={{
                 width: 200,
-                display: 'flex',
-                alignItems: 'center',
+                display: "flex",
+                alignItems: "center",
               }}
             >
               <Rating
@@ -81,23 +95,25 @@ const obj = props.data
                 onChangeActive={(event, newHover) => {
                   setHover(newHover);
                 }}
-                emptyIcon={<StarIcon style={{ opacity: 0.2 }} fontSize="inherit" />}
+                emptyIcon={
+                  <StarIcon style={{ opacity: 0.2 }} fontSize="inherit" />
+                }
               />
             </Box>
           </div>
           <textarea className="rectangle-2" onChange={(e) => handleChange(e)} />
         </div>
         <div className="buttonPlace">
-          <button className="button" onClick={() => {
-            handleClick()
-            alert("added  succesfully")
-          }} >Submit</button>
+          <button
+            className="button"
+            onClick={handleClick}
+          >
+            Submit
+          </button>
         </div>
       </div>
     </div>
-
   );
 };
 
-
-export default NewComment
+export default NewComment;
