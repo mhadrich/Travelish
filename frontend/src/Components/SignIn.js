@@ -48,7 +48,7 @@ const SignIn = (props) => {
               <input className="text-wrappere-200" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
 
               <div className="div-wrappere">
-                <input className="text-wrappere-2" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+                <input type="password" className="text-wrappere-2" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
               </div>
               <div className="button" onClick={handleSignIn}>
                 <div className="text-wrappere-3" >

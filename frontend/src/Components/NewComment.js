@@ -63,6 +63,9 @@ const NewComment = (props) => {
             <br />
             your visit?
           </p>
+          <div className="vertical-line">
+            <hr/>
+            </div>
           <div className="selected-business">
             <div className="overlap-group">
               <img

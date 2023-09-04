@@ -138,7 +138,7 @@ const AdminDetailView = (props) => {
 
             <div className="overlap-3" onClick={toggle} >
               {
-                <div className="text-wrapper-11" >{editButton ? "Edit" : "Submit"}</div>
+                <div className="text-wrapper-11"  >{editButton ? "Edit" : "Submit"}</div>
               }
             </div>
           </div>

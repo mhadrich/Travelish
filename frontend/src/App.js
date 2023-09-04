@@ -51,7 +51,7 @@ function App() {
           <Route path="/Home" element={<Home data={businessData} sorted={setSorted}/>}  />
           <Route path="/SearchResults" element={<SearchResults data={sorted} review={reviewData} select={setSelected} rate={setStars}/>} />
           <Route path="/AdminDetailView" element={<AdminDetailView data={selected} stars={stars} review={reviewData}/>} />
-          <Route path="/AdminDashboard" element={<AdminDashboard data={businessData} user={user}/>} />
+          <Route path="/AdminDashboard" element={<AdminDashboard data={businessData} user={user} select={setSelected}/>} />
           <Route path="/AddingBusiness" element={<AddingBusiness />} />
           <Route path="/NewComment" element={<NewComment data={selected}/>} />
           <Route path="/SignIn" element={<SignIn connected={setUser}/>} />

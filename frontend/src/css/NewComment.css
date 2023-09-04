@@ -1,19 +1,18 @@
 .add-comment {
-  background-color: #ffffff;
+  margin-top: -8%;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
-
 }
-
 .add-comment .div {
-  background-color: #ffffff;
-  height: 1024px;
-  width: 1440px;
-
+  background-color: #FFFFFF;
+  height: 1040px;
+  width: 1491px;
+  margin-top: 285px;
+  margin-left: 76px;
 }
-
 .add-comment .group {
   height: 459px;
   /* left: 249px; */
@@ -22,22 +21,19 @@
   width: 948px;
   /* margin-left: -100px;
   margin-top: -90px */
-
 }
-
 .add-comment .tell-us-how-was-your {
   color: #000000;
   font-family: "Sansation-Bold", Helvetica;
   font-size: 40px;
   font-weight: 700;
-  left: 0;
+  left: -39px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   text-align: right;
-  top: 0;
+  top: -24px;
 }
-
 .add-comment .selected-business {
   height: 325px;
   left: 49px;
@@ -45,25 +41,25 @@
   top: 134px;
   width: 249px;
 }
-
 .add-comment .overlap-group {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   border: 1px solid;
   border-color: #00000033;
   border-radius: 30px 30px 0px 0px;
-  height: 325px;
+  height: 390px;
   position: relative;
-  width: 245px;
+  width: 342px;
+  left: -125px;
+  top: 16px;
 }
-
 .add-comment .rectangle {
-  height: 263px;
-  left: -1px;
+  height: 282px;
+  left: 3px;
   position: absolute;
-  top: -1px;
-  width: 245px;
+  top: 2px;
+  width: 336px;
+  border-radius: 31px;
 }
-
 .add-comment .text-wrapper {
   color: #000000;
   font-family: "Sansation-Bold", Helvetica;
@@ -73,10 +69,9 @@
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 270px;
+  top: 310px;
   white-space: nowrap;
 }
-
 .add-comment .p {
   color: #000000;
   font-family: "Sansation-Regular", Helvetica;
@@ -86,10 +81,16 @@
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 295px;
+  top: 333px;
   white-space: nowrap;
 }
-
+.vertical-line {
+  width: 1px;
+  height: 527px;
+  background-color: silver;
+  margin-left: 388px;
+  margin-top: -141px;
+}
 .add-comment .separator {
   height: 459px;
   left: 388px;
@@ -98,7 +99,6 @@
   top: 0;
   width: 1px;
 }
-
 .add-comment .text-wrapper-2 {
   color: #000000;
   font-family: "Sansation-Regular", Helvetica;
@@ -111,7 +111,6 @@
   top: 0;
   white-space: nowrap;
 }
-
 .add-comment .text-wrapper-3 {
   color: #000000;
   font-family: "Sansation-Regular", Helvetica;
@@ -124,7 +123,6 @@
   top: 109px;
   white-space: nowrap;
 }
-
 .add-comment .group-2 {
   height: 36px;
   left: 482px;
@@ -133,7 +131,6 @@
   width: 180px;
   margin-top: 20px;
 }
-
 .add-comment .star {
   height: 33px;
   left: 1px;
@@ -141,7 +138,6 @@
   top: 0;
   width: 34px;
 }
-
 .add-comment .img {
   height: 33px;
   left: 37px;
@@ -149,7 +145,6 @@
   top: 0;
   width: 34px;
 }
-
 .add-comment .star-2 {
   height: 33px;
   left: 73px;
@@ -157,7 +152,6 @@
   top: 0;
   width: 34px;
 }
-
 .add-comment .star-3 {
   height: 33px;
   left: 109px;
@@ -165,7 +159,6 @@
   top: 0;
   width: 34px;
 }
-
 .add-comment .star-4 {
   height: 33px;
   left: 145px;
@@ -173,10 +166,8 @@
   top: 0;
   width: 34px;
 }
-
 .add-comment .rectangle-2 {
-  background-color: #f7f7f7;
-  font-family: "Sansation-Regular", Helvetica;
+  background-color: #F7F7F7;
   border: 1px solid;
   border-color: #00000033;
   border-radius: 10px;
@@ -186,7 +177,6 @@
   top: 161px;
   width: 460px;
 }
-
 .add-comment .button {
   color: white;
   background-color: #000000;

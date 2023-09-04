@@ -40,147 +40,162 @@
   white-space: nowrap;
 }
 
-.business-owner-view .group {
-  height: 41px;
-  left: 152px;
+/* ROW 1 */
+
+.business-owner-view .business-0 {
+  height: 272px;
+  left: 154px;
   position: absolute;
-  top: 27px;
-  width: 1137px;
+  top: 261px;
+  width: 274px;
 }
 
-.business-owner-view .logo {
-  height: 40px;
-  left: 0;
+.business-owner-view .business-1 {
+  height: 272px;
+  left: 440px;
   position: absolute;
-  top: 0;
-  width: 168px;
+  top: 261px;
+  width: 274px;
+}
+
+.business-owner-view .business-2 {
+  height: 272px;
+  left: 728px;
+  position: absolute;
+  top: 261px;
+  width: 274px;
+}
+
+.business-owner-view .business-3 {
+  height: 272px;
+  left: 1015px;
+  position: absolute;
+  top: 261px;
+  width: 274px;
+}
+
+/* ROW 2 */
+
+.business-owner-view .business-4 {
+  height: 272px;
+  left: 154px;
+  position: absolute;
+  top: 545px;
+  width: 274px;
+}
+
+.business-owner-view .business-5 {
+  height: 272px;
+  left: 440px;
+  position: absolute;
+  top: 545px;
+  width: 274px;
+}
+
+.business-owner-view .business-6 {
+  height: 272px;
+  left: 728px;
+  position: absolute;
+  top: 545px;
+  width: 274px;
+}
+
+.business-owner-view .business-7 {
+  height: 272px;
+  left: 1015px;
+  position: absolute;
+  top: 545px;
+  width: 274px;
+}
+
+/* ROW 3 */
+
+.business-owner-view .business-8 {
+  height: 272px;
+  left: 154px;
+  position: absolute;
+  top: 830px;
+  width: 274px;
+}
+
+.business-owner-view .business-9 {
+  height: 272px;
+  left: 440px;
+  position: absolute;
+  top: 830px;
+  width: 274px;
+}
+
+.business-owner-view .business-10 {
+  height: 272px;
+  left: 728px;
+  position: absolute;
+  top: 830px;
+  width: 274px;
+}
+
+.business-owner-view .business-11 {
+  height: 272px;
+  left: 1015px;
+  position: absolute;
+  top: 830px;
+  width: 274px;
+}
+
+/* ROW 4 */
+
+.business-owner-view .business-12 {
+  height: 272px;
+  left: 154px;
+  position: absolute;
+  top: 1115px;
+  width: 274px;
+}
+
+.business-owner-view .business-13 {
+  height: 272px;
+  left: 440px;
+  position: absolute;
+  top: 1115px;
+  width: 274px;
+}
+
+.business-owner-view .business-14 {
+  height: 272px;
+  left: 728px;
+  position: absolute;
+  top: 1115px;
+  width: 274px;
+}
+
+.business-owner-view .business-15 {
+  height: 272px;
+  left: 1015px;
+  position: absolute;
+  top: 1115px;
+  width: 274px;
+}
+
+.business-owner-view .overlap {
+  /* background-image: url(https://media.newyorker.com/photos/64526e8287ae684cabca2c9c/16:9/w_1280,c_limit/Chayka-Mario.jpg); */
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 10px;
+  height: 272px;
+  position: relative;
+  width: 272px;
 }
 
 .business-owner-view .img {
-  height: 40px;
-  left: 0;
+  height: 47px;
+  left: 225px;
+  object-fit: cover;
   position: absolute;
   top: 0;
-  width: 40px;
+  width: 47px;
 }
 
 .business-owner-view .text-wrapper-3 {
-  color: #000000;
-  font-family: "Sansation-Regular", Helvetica;
-  font-size: 30px;
-  font-weight: 400;
-  left: 42px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 3px;
-  white-space: nowrap;
-}
-
-.business-owner-view .navbar {
-  height: 16px;
-  left: 400px;
-  position: absolute;
-  top: 12px;
-  width: 311px;
-}
-
-.business-owner-view .text-wrapper-4 {
-  color: #000000;
-  font-family: "Sansation-Regular", Helvetica;
-  font-size: 14px;
-  font-weight: 400;
-  left: 0;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 0;
-  white-space: nowrap;
-}
-
-.business-owner-view .text-wrapper-5 {
-  color: #000000;
-  font-family: "Sansation-Regular", Helvetica;
-  font-size: 14px;
-  font-weight: 400;
-  left: 109px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 0;
-  white-space: nowrap;
-}
-
-.business-owner-view .text-wrapper-6 {
-  color: #000000;
-  font-family: "Sansation-Regular", Helvetica;
-  font-size: 14px;
-  font-weight: 400;
-  left: 183px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 0;
-  white-space: nowrap;
-}
-
-.business-owner-view .text-wrapper-7 {
-  color: #000000;
-  font-family: "Sansation-Regular", Helvetica;
-  font-size: 14px;
-  font-weight: 400;
-  left: 244px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 0;
-  white-space: nowrap;
-}
-
-.business-owner-view .sign-in {
-  height: 41px;
-  left: 1030px;
-  position: absolute;
-  top: 0;
-  width: 109px;
-}
-
-.business-owner-view .overlap-group {
-  background-color: #4e7e99;
-  border-radius: 50px;
-  height: 41px;
-  position: relative;
-  width: 107px;
-}
-
-.business-owner-view .text-wrapper-8 {
-  color: #ffffff;
-  font-family: "Sansation-Bold", Helvetica;
-  font-size: 14px;
-  font-weight: 700;
-  left: 22px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 12px;
-  white-space: nowrap;
-}
-
-.business-owner-view .group-2 {
-  height: 336px;
-  left: -117px;
-  position: absolute;
-  top: 207px;
-  width: 1141px;
-}
-.remove{
-  width:50px;
-  height: 50px;
-  margin-left:220px
-}
-
-
-.business-owner-view .text-wrapper-9 {
   color: #ffffff;
   font-family: "Sansation-Bold", Helvetica;
   font-size: 28px;
@@ -193,224 +208,74 @@
   white-space: nowrap;
 }
 
-.business-owner-view .div-wrapper {
+.business-owner-view .overlap-wrapper {
+  height: 272px;
+  left: 441px;
+  position: absolute;
+  top: 261px;
+  width: 274px;
+}
 
+.business-owner-view .overlap {
+  background-image: url(https://media.newyorker.com/photos/64526e8287ae684cabca2c9c/16:9/w_1280,c_limit/Chayka-Mario.jpg);
   background-position: 50% 50%;
   background-size: cover;
   height: 272px;
-  left: 287px;
-  position: absolute;
-  top: 54px;
+  position: relative;
   width: 272px;
-  cursor: pointer;
-  border-radius: 10px;
 }
 
-.business-owner-view .text-wrapper-10 {
-  color: #00000033;
-  font-family: "Sansation-Bold", Helvetica;
-  font-size: 300px;
-  font-weight: 700;
-  left: 1215px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 0;
-  white-space: nowrap;
-  cursor: pointer;
-}
-/* FIRST ROW */
-.business-owner-view .overlap-0 {
-  background-position: 50% 50%;
-  background-size: cover;
+.business-owner-view .overlap-group-wrapper {
   height: 272px;
-  left: 0px;
+  left: 728px;
   position: absolute;
-  top: 0px;
-  width: 272px;
-  cursor: pointer;
-}
-
-.business-owner-view .overlap-1 {
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 272px;
-  left: 300px;
-  position: absolute;
-  top: 0px;
-  width: 272px;
-  cursor: pointer;
+  top: 261px;
+  width: 274px;
 }
 
 .business-owner-view .overlap-2 {
+  background-image: url(https://media.newyorker.com/photos/64526e8287ae684cabca2c9c/16:9/w_1280,c_limit/Chayka-Mario.jpg);
   background-position: 50% 50%;
   background-size: cover;
   height: 272px;
-  left: 600px;
-  position: absolute;
-  top: 0px;
+  position: relative;
   width: 272px;
-  cursor: pointer;
 }
 
-.business-owner-view .overlap-3 {
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 272px;
-  left: 900px;
+.business-owner-view .add {
+  height: 336px;
+  left: 1015px;
   position: absolute;
-  top: 0px;
-  width: 272px;
-  cursor: pointer;
+  top: 207px;
+  width: 274px;
 }
 
-/* 2ND ROW */
-
-.business-owner-view .overlap-4 {
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 272px;
-  left: 300px;
-  position: absolute;
-  top: 0px;
+/* .business-owner-view .overlap-3 {
+  height: 336px;
+  position: relative;
   width: 272px;
-  cursor: pointer;
-}
-
-.business-owner-view .overlap-5 {
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 272px;
-  left: 300px;
-  position: absolute;
-  top: 300px;
-  width: 272px;
-  cursor: pointer;
-}
-
-.business-owner-view .overlap-6 {
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 272px;
-  left: 600px;
-  position: absolute;
-  top: 300px;
-  width: 272px;
-  cursor: pointer;
-}
-
-.business-owner-view .overlap-7 {
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 272px;
-  left: 900px;
-  position: absolute;
-  top: 300px;
-  width: 272px;
-  cursor: pointer;
-}
-
-/* 3RD ROW */
-
-.business-owner-view .overlap-8 {
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 272px;
-  left: 0px;
-  position: absolute;
-  top: 600px;
-  width: 272px;
-  cursor: pointer;
-}
-
-.business-owner-view .overlap-9 {
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 272px;
-  left: 300px;
-  position: absolute;
-  top: 600px;
-  width: 272px;
-  cursor: pointer;
-}
-
-.business-owner-view .overlap-10 {
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 272px;
-  left: 600px;
-  position: absolute;
-  top: 600px;
-  width: 272px;
-  cursor: pointer;
-}
-
-.business-owner-view .overlap-11 {
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 272px;
-  left: 900px;
-  position: absolute;
-  top: 600px;
-  width: 272px;
-  cursor: pointer;
-}
-
-/* 4TH ROW */
-
-.business-owner-view .overlap-12 {
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 272px;
-  left: 0px;
-  position: absolute;
-  top: 900px;
-  width: 272px;
-  cursor: pointer;
-}
-
-.business-owner-view .overlap-13 {
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 272px;
-  left: 300px;
-  position: absolute;
-  top: 900px;
-  width: 272px;
-  cursor: pointer;
-}
-
-.business-owner-view .overlap-14 {
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 272px;
-  left: 600px;
-  position: absolute;
-  top: 900px;
-  width: 272px;
-  cursor: pointer;
-}
-
-.business-owner-view .overlap-15 {
-  background-position: 50% 50%;
-  background-size: cover;
-  height: 272px;
-  left: 900px;
-  position: absolute;
-  top: 900px;
-  width: 272px;
-  cursor: pointer;
-}
+} */
 
 .business-owner-view .rectangle {
   background-color: #c4c4c4;
   border-radius: 10px;
   box-shadow: inset 0px 0px 20px 10px #00000033;
-  height: 276px;
-  left: 1152px;
+  height: 272px;
+  left: 0;
   position: absolute;
-  top: 50px;
+  /* top: 54px; */
   width: 272px;
 }
 
-
+.business-owner-view .text-wrapper-4 {
+  color: #00000033;
+  font-family: "Sansation-Bold", Helvetica;
+  font-size: 300px;
+  font-weight: 700;
+  left: 66px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: -50px;
+  white-space: nowrap;
+}

@@ -1,10 +1,13 @@
 import React from "react";
 import "../css/AdminDashboard.css";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+
 const AdminDashboard = (props) => {
-  const { data, user } = props;
+  const { data, user, select } = props;
+  const navigate = useNavigate();
+  var counter = 0;
   const [welcome, setWelcome] = useState("Anonymous");
   useEffect(() => {
     if (user) {
@@ -28,43 +31,39 @@ const AdminDashboard = (props) => {
       <div className="div">
         <div className="text-wrapper">Welcome back, {welcome}</div>
         <div className="text-wrapper-2">Dashboard</div>
-
-        {data &&
-          data.map((el, i) => {
-            return (
-              <div className={`overlap-${i}`}>
-                <div className="group-2">
-                  <div
-                    className="div-wrapper"
-                    style={{
-                      backgroundImage: `linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)),url(${el.images})`,
-                    }}
-                  >
-                    <img
-                      src="https://cdn4.iconfinder.com/data/icons/essentials-73/24/039_-_Cross-512.png"
-                      style={{
-                        width: "40px",
-                        marginLeft: "220px",
-                        marginTop: "5px",
-                      }}
-                      onClick={() => handleDelete(el.id)}
-                    ></img>
-                    <div className="text-wrapper-9">{el.name}</div>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        <div className="overlap-4">
-          <Link to="/AddingBusiness">
-            <div className="rectangle">
-              <div className="text-wrapper-10">+</div>
+        
+          {data && data.map((e,i)=>{
+            counter = i+1;
+            return(
+              <div className={`business-${i}`}>
+              <div 
+                className='overlap'
+                onClick={()=>{
+                  select(e);
+                  navigate('/AdminDetailView');
+                }}
+                style={{
+                  backgroundImage: `linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.6)),url(${e.images})`,
+                  }}
+              >
+              <img className="img" alt="Remove" src="https://cdn4.iconfinder.com/data/icons/essentials-73/24/039_-_Cross-512.png" onClick={() => handleDelete(e.id)} />
+              <div className="text-wrapper-3">{e.name}</div>
             </div>
-          </Link>
+            </div>
+            )
+          })}
+        
+        <Link to="/AddingBusiness">
+        <div className={`business-${counter}`}>
+          <div className="overlap-3">
+            <div className="rectangle" />
+            <div className="text-wrapper-4">+</div>
+          </div>
         </div>
+        </Link>
       </div>
     </div>
-  );
+  )
 };
 
 export default AdminDashboard;
